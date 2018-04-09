@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/estape11/CLionProjects/Tarea04-Analisis
+CMAKE_SOURCE_DIR = "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include test/CMakeFiles/tester.dir/depend.make
@@ -59,16 +59,16 @@ include test/CMakeFiles/tester.dir/flags.make
 
 test/CMakeFiles/tester.dir/testAllocator.cpp.o: test/CMakeFiles/tester.dir/flags.make
 test/CMakeFiles/tester.dir/testAllocator.cpp.o: ../test/testAllocator.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/tester.dir/testAllocator.cpp.o"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tester.dir/testAllocator.cpp.o -c /Users/estape11/CLionProjects/Tarea04-Analisis/test/testAllocator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/CMakeFiles/tester.dir/testAllocator.cpp.o"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tester.dir/testAllocator.cpp.o -c "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testAllocator.cpp"
 
 test/CMakeFiles/tester.dir/testAllocator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tester.dir/testAllocator.cpp.i"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estape11/CLionProjects/Tarea04-Analisis/test/testAllocator.cpp > CMakeFiles/tester.dir/testAllocator.cpp.i
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testAllocator.cpp" > CMakeFiles/tester.dir/testAllocator.cpp.i
 
 test/CMakeFiles/tester.dir/testAllocator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tester.dir/testAllocator.cpp.s"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estape11/CLionProjects/Tarea04-Analisis/test/testAllocator.cpp -o CMakeFiles/tester.dir/testAllocator.cpp.s
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testAllocator.cpp" -o CMakeFiles/tester.dir/testAllocator.cpp.s
 
 test/CMakeFiles/tester.dir/testAllocator.cpp.o.requires:
 
@@ -83,16 +83,16 @@ test/CMakeFiles/tester.dir/testAllocator.cpp.o.provides.build: test/CMakeFiles/t
 
 test/CMakeFiles/tester.dir/testLU.cpp.o: test/CMakeFiles/tester.dir/flags.make
 test/CMakeFiles/tester.dir/testLU.cpp.o: ../test/testLU.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/tester.dir/testLU.cpp.o"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tester.dir/testLU.cpp.o -c /Users/estape11/CLionProjects/Tarea04-Analisis/test/testLU.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object test/CMakeFiles/tester.dir/testLU.cpp.o"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tester.dir/testLU.cpp.o -c "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testLU.cpp"
 
 test/CMakeFiles/tester.dir/testLU.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tester.dir/testLU.cpp.i"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estape11/CLionProjects/Tarea04-Analisis/test/testLU.cpp > CMakeFiles/tester.dir/testLU.cpp.i
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testLU.cpp" > CMakeFiles/tester.dir/testLU.cpp.i
 
 test/CMakeFiles/tester.dir/testLU.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tester.dir/testLU.cpp.s"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estape11/CLionProjects/Tarea04-Analisis/test/testLU.cpp -o CMakeFiles/tester.dir/testLU.cpp.s
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testLU.cpp" -o CMakeFiles/tester.dir/testLU.cpp.s
 
 test/CMakeFiles/tester.dir/testLU.cpp.o.requires:
 
@@ -107,16 +107,16 @@ test/CMakeFiles/tester.dir/testLU.cpp.o.provides.build: test/CMakeFiles/tester.d
 
 test/CMakeFiles/tester.dir/testMain.cpp.o: test/CMakeFiles/tester.dir/flags.make
 test/CMakeFiles/tester.dir/testMain.cpp.o: ../test/testMain.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/tester.dir/testMain.cpp.o"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tester.dir/testMain.cpp.o -c /Users/estape11/CLionProjects/Tarea04-Analisis/test/testMain.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object test/CMakeFiles/tester.dir/testMain.cpp.o"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tester.dir/testMain.cpp.o -c "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testMain.cpp"
 
 test/CMakeFiles/tester.dir/testMain.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tester.dir/testMain.cpp.i"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estape11/CLionProjects/Tarea04-Analisis/test/testMain.cpp > CMakeFiles/tester.dir/testMain.cpp.i
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testMain.cpp" > CMakeFiles/tester.dir/testMain.cpp.i
 
 test/CMakeFiles/tester.dir/testMain.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tester.dir/testMain.cpp.s"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estape11/CLionProjects/Tarea04-Analisis/test/testMain.cpp -o CMakeFiles/tester.dir/testMain.cpp.s
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testMain.cpp" -o CMakeFiles/tester.dir/testMain.cpp.s
 
 test/CMakeFiles/tester.dir/testMain.cpp.o.requires:
 
@@ -131,16 +131,16 @@ test/CMakeFiles/tester.dir/testMain.cpp.o.provides.build: test/CMakeFiles/tester
 
 test/CMakeFiles/tester.dir/testMatrix.cpp.o: test/CMakeFiles/tester.dir/flags.make
 test/CMakeFiles/tester.dir/testMatrix.cpp.o: ../test/testMatrix.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/tester.dir/testMatrix.cpp.o"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tester.dir/testMatrix.cpp.o -c /Users/estape11/CLionProjects/Tarea04-Analisis/test/testMatrix.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object test/CMakeFiles/tester.dir/testMatrix.cpp.o"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/tester.dir/testMatrix.cpp.o -c "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testMatrix.cpp"
 
 test/CMakeFiles/tester.dir/testMatrix.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tester.dir/testMatrix.cpp.i"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estape11/CLionProjects/Tarea04-Analisis/test/testMatrix.cpp > CMakeFiles/tester.dir/testMatrix.cpp.i
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testMatrix.cpp" > CMakeFiles/tester.dir/testMatrix.cpp.i
 
 test/CMakeFiles/tester.dir/testMatrix.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tester.dir/testMatrix.cpp.s"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estape11/CLionProjects/Tarea04-Analisis/test/testMatrix.cpp -o CMakeFiles/tester.dir/testMatrix.cpp.s
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testMatrix.cpp" -o CMakeFiles/tester.dir/testMatrix.cpp.s
 
 test/CMakeFiles/tester.dir/testMatrix.cpp.o.requires:
 
@@ -169,12 +169,12 @@ test/tester: test/CMakeFiles/tester.dir/testMain.cpp.o
 test/tester: test/CMakeFiles/tester.dir/testMatrix.cpp.o
 test/tester: test/CMakeFiles/tester.dir/build.make
 test/tester: src/libanpi.a
-test/tester: /usr/local/lib/libboost_filesystem-mt.dylib
-test/tester: /usr/local/lib/libboost_system-mt.dylib
-test/tester: /usr/local/lib/libboost_unit_test_framework-mt.dylib
+test/tester: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+test/tester: /usr/lib/x86_64-linux-gnu/libboost_system.so
+test/tester: /usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so
 test/tester: test/CMakeFiles/tester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tester"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tester.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable tester"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/CMakeFiles/tester.dir/build: test/tester
@@ -189,10 +189,10 @@ test/CMakeFiles/tester.dir/requires: test/CMakeFiles/tester.dir/testMatrix.cpp.o
 .PHONY : test/CMakeFiles/tester.dir/requires
 
 test/CMakeFiles/tester.dir/clean:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test && $(CMAKE_COMMAND) -P CMakeFiles/tester.dir/cmake_clean.cmake
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" && $(CMAKE_COMMAND) -P CMakeFiles/tester.dir/cmake_clean.cmake
 .PHONY : test/CMakeFiles/tester.dir/clean
 
 test/CMakeFiles/tester.dir/depend:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/estape11/CLionProjects/Tarea04-Analisis /Users/estape11/CLionProjects/Tarea04-Analisis/test /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/CMakeFiles/tester.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test/CMakeFiles/tester.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : test/CMakeFiles/tester.dir/depend
 

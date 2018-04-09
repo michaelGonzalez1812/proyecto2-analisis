@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /Users/estape11/CLionProjects/Tarea04-Analisis
-# Build directory: /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug
+# Source directory: /home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis
+# Build directory: /home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

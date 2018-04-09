@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/estape11/CLionProjects/Tarea04-Analisis
+CMAKE_SOURCE_DIR = "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-de
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -81,7 +81,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/Applications/CLion.app/Contents/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
+	/home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -91,14 +91,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_progress_start /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/CMakeFiles/progress.marks
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles 0
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_progress_start "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/benchmarks/CMakeFiles/progress.marks"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/all
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/clean
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/clean
 .PHONY : clean
 
 # The main clean target
@@ -108,22 +108,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/preinstall
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/preinstall
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 benchmarks/CMakeFiles/benchmark.dir/rule:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/benchmark.dir/rule
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f CMakeFiles/Makefile2 benchmarks/CMakeFiles/benchmark.dir/rule
 .PHONY : benchmarks/CMakeFiles/benchmark.dir/rule
 
 # Convenience name for target.
@@ -133,7 +133,7 @@ benchmark: benchmarks/CMakeFiles/benchmark.dir/rule
 
 # fast build rule for target.
 benchmark/fast:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/build
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/build
 .PHONY : benchmark/fast
 
 benchmarkMain.o: benchmarkMain.cpp.o
@@ -142,7 +142,7 @@ benchmarkMain.o: benchmarkMain.cpp.o
 
 # target to build an object file
 benchmarkMain.cpp.o:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMain.cpp.o
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMain.cpp.o
 .PHONY : benchmarkMain.cpp.o
 
 benchmarkMain.i: benchmarkMain.cpp.i
@@ -151,7 +151,7 @@ benchmarkMain.i: benchmarkMain.cpp.i
 
 # target to preprocess a source file
 benchmarkMain.cpp.i:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMain.cpp.i
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMain.cpp.i
 .PHONY : benchmarkMain.cpp.i
 
 benchmarkMain.s: benchmarkMain.cpp.s
@@ -160,7 +160,7 @@ benchmarkMain.s: benchmarkMain.cpp.s
 
 # target to generate assembly for a file
 benchmarkMain.cpp.s:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMain.cpp.s
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMain.cpp.s
 .PHONY : benchmarkMain.cpp.s
 
 benchmarkMatrixAdd.o: benchmarkMatrixAdd.cpp.o
@@ -169,7 +169,7 @@ benchmarkMatrixAdd.o: benchmarkMatrixAdd.cpp.o
 
 # target to build an object file
 benchmarkMatrixAdd.cpp.o:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMatrixAdd.cpp.o
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMatrixAdd.cpp.o
 .PHONY : benchmarkMatrixAdd.cpp.o
 
 benchmarkMatrixAdd.i: benchmarkMatrixAdd.cpp.i
@@ -178,7 +178,7 @@ benchmarkMatrixAdd.i: benchmarkMatrixAdd.cpp.i
 
 # target to preprocess a source file
 benchmarkMatrixAdd.cpp.i:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMatrixAdd.cpp.i
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMatrixAdd.cpp.i
 .PHONY : benchmarkMatrixAdd.cpp.i
 
 benchmarkMatrixAdd.s: benchmarkMatrixAdd.cpp.s
@@ -187,7 +187,7 @@ benchmarkMatrixAdd.s: benchmarkMatrixAdd.cpp.s
 
 # target to generate assembly for a file
 benchmarkMatrixAdd.cpp.s:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMatrixAdd.cpp.s
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f benchmarks/CMakeFiles/benchmark.dir/build.make benchmarks/CMakeFiles/benchmark.dir/benchmarkMatrixAdd.cpp.s
 .PHONY : benchmarkMatrixAdd.cpp.s
 
 # Help Target
@@ -217,6 +217,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

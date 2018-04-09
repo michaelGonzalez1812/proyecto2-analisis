@@ -8,260 +8,276 @@
 		<Option virtualFolders="CMake Files\;CMake Files\src\;CMake Files\cmake\;CMake Files\test\;CMake Files\benchmarks\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="test">
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tarea03">
-				<Option output="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/tarea03" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src"/>
+				<Option output="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src/tarea03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/estape11/CLionProjects/Tarea04-Analisis/include"/>
+					<Add directory="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 tarea03"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 tarea03"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tarea03/fast">
-				<Option output="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/tarea03" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src"/>
+				<Option output="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src/tarea03" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/estape11/CLionProjects/Tarea04-Analisis/include"/>
+					<Add directory="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 tarea03/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 tarea03/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="anpi">
-				<Option output="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/libanpi.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src"/>
+				<Option output="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src/libanpi.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/estape11/CLionProjects/Tarea04-Analisis/include"/>
+					<Add directory="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 anpi"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 anpi"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="anpi/fast">
-				<Option output="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/libanpi.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src"/>
+				<Option output="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src/libanpi.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/estape11/CLionProjects/Tarea04-Analisis/include"/>
+					<Add directory="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 anpi/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 anpi/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/src/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tester">
-				<Option output="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/tester" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test"/>
+				<Option output="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test/tester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/estape11/CLionProjects/Tarea04-Analisis/include"/>
+					<Add directory="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 tester"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 tester"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="tester/fast">
-				<Option output="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/tester" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test"/>
+				<Option output="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test/tester" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/test"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/estape11/CLionProjects/Tarea04-Analisis/include"/>
+					<Add directory="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 tester/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 tester/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/test/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="benchmark">
-				<Option output="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/benchmark" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks"/>
+				<Option output="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/benchmarks/benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/benchmarks"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/estape11/CLionProjects/Tarea04-Analisis/include"/>
+					<Add directory="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 benchmark"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 benchmark"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="benchmark/fast">
-				<Option output="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/benchmark" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks"/>
+				<Option output="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/benchmarks/benchmark" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/benchmarks"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/Users/estape11/CLionProjects/Tarea04-Analisis/include"/>
+					<Add directory="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
 					<Add directory="/usr/local/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
-					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
-					<Add directory="/System/Library/Frameworks"/>
-					<Add directory="/Library/Frameworks"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 benchmark/fast"/>
-					<CompileFile command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j2 -f &quot;/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 benchmark/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/mike/Documentos/analisis/Proyectos/proyecto\ 02/proyecto2-analisis/cmake-build-debug/benchmarks/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/benchmarks/benchmarkFramework.hpp">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/benchmarks/benchmarkFramework.hpp">
 			<Option target="benchmark"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/benchmarks/benchmarkMain.cpp">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/benchmarks/benchmarkMain.cpp">
 			<Option target="benchmark"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/benchmarks/benchmarkMatrixAdd.cpp">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/benchmarks/benchmarkMatrixAdd.cpp">
 			<Option target="benchmark"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/src/main.cpp">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/main.cpp">
 			<Option target="tarea03"/>
 			<Option target="anpi"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/test/testAllocator.cpp">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testAllocator.cpp">
 			<Option target="tester"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/test/testLU.cpp">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testLU.cpp">
 			<Option target="tester"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/test/testMain.cpp">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testMain.cpp">
 			<Option target="tester"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/test/testMatrix.cpp">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/testMatrix.cpp">
 			<Option target="tester"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/CMakeLists.txt">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/src/CMakeLists.txt">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\src\"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/cmake/AnpiConfig.hpp.in">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake/AnpiConfig.hpp.in">
 			<Option virtualFolder="CMake Files\cmake\"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/test/CMakeLists.txt">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/test/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
-		<Unit filename="/Users/estape11/CLionProjects/Tarea04-Analisis/benchmarks/CMakeLists.txt">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/benchmarks/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\benchmarks\"/>
 		</Unit>
 	</Project>

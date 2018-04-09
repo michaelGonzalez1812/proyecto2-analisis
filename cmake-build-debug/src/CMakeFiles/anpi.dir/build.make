@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
+RM = /home/mike/Descargas/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/estape11/CLionProjects/Tarea04-Analisis
+CMAKE_SOURCE_DIR = "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include src/CMakeFiles/anpi.dir/depend.make
@@ -59,16 +59,16 @@ include src/CMakeFiles/anpi.dir/flags.make
 
 src/CMakeFiles/anpi.dir/main.cpp.o: src/CMakeFiles/anpi.dir/flags.make
 src/CMakeFiles/anpi.dir/main.cpp.o: ../src/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/anpi.dir/main.cpp.o"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/anpi.dir/main.cpp.o -c /Users/estape11/CLionProjects/Tarea04-Analisis/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/anpi.dir/main.cpp.o"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/anpi.dir/main.cpp.o -c "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/main.cpp"
 
 src/CMakeFiles/anpi.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/anpi.dir/main.cpp.i"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/estape11/CLionProjects/Tarea04-Analisis/src/main.cpp > CMakeFiles/anpi.dir/main.cpp.i
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/main.cpp" > CMakeFiles/anpi.dir/main.cpp.i
 
 src/CMakeFiles/anpi.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/anpi.dir/main.cpp.s"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/estape11/CLionProjects/Tarea04-Analisis/src/main.cpp -o CMakeFiles/anpi.dir/main.cpp.s
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/main.cpp" -o CMakeFiles/anpi.dir/main.cpp.s
 
 src/CMakeFiles/anpi.dir/main.cpp.o.requires:
 
@@ -91,9 +91,9 @@ anpi_EXTERNAL_OBJECTS =
 src/libanpi.a: src/CMakeFiles/anpi.dir/main.cpp.o
 src/libanpi.a: src/CMakeFiles/anpi.dir/build.make
 src/libanpi.a: src/CMakeFiles/anpi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libanpi.a"
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/anpi.dir/cmake_clean_target.cmake
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/anpi.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libanpi.a"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && $(CMAKE_COMMAND) -P CMakeFiles/anpi.dir/cmake_clean_target.cmake
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/anpi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 src/CMakeFiles/anpi.dir/build: src/libanpi.a
@@ -105,10 +105,10 @@ src/CMakeFiles/anpi.dir/requires: src/CMakeFiles/anpi.dir/main.cpp.o.requires
 .PHONY : src/CMakeFiles/anpi.dir/requires
 
 src/CMakeFiles/anpi.dir/clean:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src && $(CMAKE_COMMAND) -P CMakeFiles/anpi.dir/cmake_clean.cmake
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && $(CMAKE_COMMAND) -P CMakeFiles/anpi.dir/cmake_clean.cmake
 .PHONY : src/CMakeFiles/anpi.dir/clean
 
 src/CMakeFiles/anpi.dir/depend:
-	cd /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/estape11/CLionProjects/Tarea04-Analisis /Users/estape11/CLionProjects/Tarea04-Analisis/src /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src /Users/estape11/CLionProjects/Tarea04-Analisis/cmake-build-debug/src/CMakeFiles/anpi.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src/CMakeFiles/anpi.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : src/CMakeFiles/anpi.dir/depend
 

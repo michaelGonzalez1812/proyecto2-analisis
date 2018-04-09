@@ -100,6 +100,26 @@ namespace anpi {
         } else throw anpi::Exception("La matriz no es cuadrada");
     }
 
+    template<typename T>
+    void pivot(const Matrix<T> &A, std::vector<T>& permut, std::vector<T>& mayores, const int& k){
+        unsigned int pos = k;
+        T aux;
+        T big = fabs(A[permut[k]][k] / mayores[permut[k]]); //se escala el valor -> s[permut[k]] = el mayor de la fila
+
+        //busca el mayor de la columna
+        for (unsigned int i = k+1; i < A.rows(); ++i) {
+            aux = fabs(A[permut[i]][k] / mayores[permut[i]]);
+            if (aux > big) {
+                big = aux;
+                pos = i;
+            }
+        }
+
+        //switch
+        aux = permut[pos];
+        permut[pos] = permut[k];
+        permut[k] = aux;
+    }
 }
 
 #endif

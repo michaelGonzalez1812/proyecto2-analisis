@@ -48,54 +48,69 @@ void printVector(std::vector<T> &A) {
 
 int main() {
 
+    anpi::Matrix<float> A = {{2.5, -4, 5.3},
+                             {6.8,  4, 3.6},
+                             {3,    3, 3  }};
+    std::vector<float> permut {0, 1, 2};
+    std::vector<float> s      {5.3, 6.8, 3};
+
+    anpi::pivot<float>(A, permut, s, 3);
+
+    std::cout << "orden:   " << std::endl;
+
+    for (unsigned int i = 0; i < permut.size(); ++i) {
+        std::cout << permut[i] << ", ";
+    }
+
+
     // Some example code
-    anpi::Matrix<float> A = {{-1, -2, 1, 2},
-                             {2,  0,  1, 2},
-                             {-1, -1, 0, 1},
-                             {1,  1,  1, 1}};
-    std::cout << "------------TEST LU------------" << std::endl;
-    std::cout << "-Matriz A original-" << std::endl;
-    printMatriz(A);
-    anpi::Matrix<float> LU;
-    std::vector<size_t> p;
-    std::cout << "- LU Dolittle de A -" << std::endl;
-    anpi::luDoolittle(A, LU, p);
-    printMatriz(LU);
-    std::cout << "- Unpack Dolittle de LU -" << std::endl;
-    anpi::Matrix<float> L, U, LUA;
-    anpi::unpackDoolittle(LU, L, U);
-    std::cout << "L->" << std::endl;
-    printMatriz(L);
-    std::cout << "U->" << std::endl;
-    printMatriz(U);
-    std::cout << "- Comprobacion de A=L*U -" << std::endl;
-    LUA = L * U;
-    printMatriz(LUA);
-    std::cout << "-----------------------------" << std::endl;
-    std::cout << "- LU Crout de A -" << std::endl;
-    anpi::luCrout(A, LU, p);
-    printMatriz(LU);
-    std::cout << "- Unpack Crout de LU -" << std::endl;
-    anpi::unpackCrout(LU, L, U);
-    std::cout << "L->" << std::endl;
-    printMatriz(L);
-    std::cout << "U->" << std::endl;
-    printMatriz(U);
-    std::cout << "- Comprobacion de A=L*U -" << std::endl;
-    LUA = L * U;
-    printMatriz(LUA);
-    std::cout << "-------TEST Producto Matricial--------" << std::endl;
-    std::cout << "-Matriz A -" << std::endl;
-    printMatriz(A);
-    std::cout << "Vector O -" << std::endl;
-    std::vector<float> O = {1, 2, 3, 4};
-    printVector(O);
-    std::cout << "-A*O -" << std::endl;
-    std::vector<float> R = A * O;
-    printVector(R);
-    std::cout << "-----------------------------" << std::endl;
-    std::cout << "A*A" << std::endl;
-    LUA=A*A;
-    printMatriz(LUA);
+//    anpi::Matrix<float> A = {{-1, -2, 1, 2},
+//                             {2,  0,  1, 2},
+//                             {-1, -1, 0, 1},
+//                             {1,  1,  1, 1}};
+//    std::cout << "------------TEST LU------------" << std::endl;
+//    std::cout << "-Matriz A original-" << std::endl;
+//    printMatriz(A);
+//    anpi::Matrix<float> LU;
+//    std::vector<size_t> p;
+//    std::cout << "- LU Dolittle de A -" << std::endl;
+//    anpi::luDoolittle(A, LU, p);
+//    printMatriz(LU);
+//    std::cout << "- Unpack Dolittle de LU -" << std::endl;
+//    anpi::Matrix<float> L, U, LUA;
+//    anpi::unpackDoolittle(LU, L, U);
+//    std::cout << "L->" << std::endl;
+//    printMatriz(L);
+//    std::cout << "U->" << std::endl;
+//    printMatriz(U);
+//    std::cout << "- Comprobacion de A=L*U -" << std::endl;
+//    LUA = L * U;
+//    printMatriz(LUA);
+//    std::cout << "-----------------------------" << std::endl;
+//    std::cout << "- LU Crout de A -" << std::endl;
+//    anpi::luCrout(A, LU, p);
+//    printMatriz(LU);
+//    std::cout << "- Unpack Crout de LU -" << std::endl;
+//    anpi::unpackCrout(LU, L, U);
+//    std::cout << "L->" << std::endl;
+//    printMatriz(L);
+//    std::cout << "U->" << std::endl;
+//    printMatriz(U);
+//    std::cout << "- Comprobacion de A=L*U -" << std::endl;
+//    LUA = L * U;
+//    printMatriz(LUA);
+//    std::cout << "-------TEST Producto Matricial--------" << std::endl;
+//    std::cout << "-Matriz A -" << std::endl;
+//    printMatriz(A);
+//    std::cout << "Vector O -" << std::endl;
+//    std::vector<float> O = {1, 2, 3, 4};
+//    printVector(O);
+//    std::cout << "-A*O -" << std::endl;
+//    std::vector<float> R = A * O;
+//    printVector(R);
+//    std::cout << "-----------------------------" << std::endl;
+//    std::cout << "A*A" << std::endl;
+//    LUA=A*A;
+//    printMatriz(LUA);
     return EXIT_FAILURE;
 }
