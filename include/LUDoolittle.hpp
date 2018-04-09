@@ -21,7 +21,6 @@
 
 namespace anpi {
 
-
     /**
      * Auxiliary method used to debug LU decomposition.
      *
@@ -75,33 +74,42 @@ namespace anpi {
     template<typename T>
     void luDoolittle(const Matrix<T> &A,
                      Matrix<T> &LU,
-                     std::vector<size_t> &permut) {
+                     std::vector<unsigned int> &permut) {
+
+        const T tol = 0.0001; //tolerancia para division entre 0
+
         if (A.rows() == A.cols()) {
+            std::vector<T> bigxrow(3);
             LU = A;
             T cte = T(0);
-            for (unsigned int k = 0; k < A.rows() - 1; k++) { // iteracion para crear la matriz triangular superior
-                for (unsigned int i = k + 1; i < A.rows(); i++) {
-                    for (unsigned int j = k; j < A.rows(); j++) {
-                        if (LU[k][k] != 0) { // evitar division entre cero
-                            if (j == k) {
-                                cte = LU[i][k] / LU[k][k]; // cte para generar ceros en la matriz
-                                LU[i][j] = cte; // creacion de L
-                            } else {
-                                LU[i][j] = LU[i][j] - cte * LU[k][j]; // creacion de U
-                            }
 
-                        }
-
-                    }
-
+            //encuentra los valores mas grandes de cada fila
+            for (unsigned int i = 0; i < A.rows(); ++i) {
+                permut[i] = i;
+                bigxrow[i] = fabs(A[i][0]);
+                for (unsigned int j = 1; j < A.rows(); ++j) {
+                    if(fabs(A[i][j]) > bigxrow[i]) bigxrow[i] = fabs(A[i][j]);
                 }
+            }
 
+            for (unsigned int k = 0; k < A.rows() - 1; ++k) { // iteracion para crear la matriz triangular superior
+                pivot(LU, permut, bigxrow, k);
+                for (unsigned int i = k + 1; i < A.rows(); ++i) {
+
+                    if (fabs(LU[permut[k]][k]) > fabs(tol))             // evitar division entre cero
+                        cte = LU[permut[i]][k] / LU[permut[k]][k]; // cte para generar ceros en la matriz
+                    else
+                        throw anpi::Exception("Division entre cero");
+                    LU[permut[i]][k] = cte; // creacion de L
+                    for (unsigned int j = k+1; j < A.rows(); ++j)
+                        LU[permut[i]][j] = LU[permut[i]][j] - cte * LU[permut[k]][j]; // creacion de U
+                }
             }
         } else throw anpi::Exception("La matriz no es cuadrada");
     }
 
     template<typename T>
-    void pivot(const Matrix<T> &A, std::vector<T>& permut, std::vector<T>& mayores, const int& k){
+    void pivot(const Matrix<T> &A, std::vector<unsigned int>& permut, std::vector<T>& mayores, const int& k){
         unsigned int pos = k;
         T aux;
         T big = fabs(A[permut[k]][k] / mayores[permut[k]]); //se escala el valor -> s[permut[k]] = el mayor de la fila

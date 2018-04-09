@@ -41,29 +41,34 @@ void printVector(std::vector<T> &A) {
     std::cout << "{";
     for (int unsigned i = 0; i < A.size(); i++) {
         if (i == A.size() - 1) std::cout << A[i];
-        else std::cout << A[i] << ", "<<std::endl;
+        else std::cout << A[i] << ", ";
     }
     std::cout << "}" << std::endl;
 }
 
 int main() {
+//***********************************************************
+//    Some example code
+//***********************************************************
 
+//LUDoolittle con pivoteo------------------------------------
     anpi::Matrix<float> A = {{2.5, -4, 5.3},
                              {6.8,  4, 3.6},
                              {3,    3, 3  }};
-    std::vector<float> permut {0, 1, 2};
-    std::vector<float> s      {5.3, 6.8, 3};
+    anpi::Matrix<float> LU;
+    std::vector<unsigned int> permut(3);
 
-    anpi::pivot<float>(A, permut, s, 3);
-
+    anpi::luDoolittle(A, LU, permut);
     std::cout << "orden:   " << std::endl;
 
-    for (unsigned int i = 0; i < permut.size(); ++i) {
-        std::cout << permut[i] << ", ";
-    }
+    printVector(permut);
+    std::cout << std::endl;
+    printMatriz(LU);
+//-----------------------------------------------------------
 
+    return EXIT_FAILURE;
+}
 
-    // Some example code
 //    anpi::Matrix<float> A = {{-1, -2, 1, 2},
 //                             {2,  0,  1, 2},
 //                             {-1, -1, 0, 1},
@@ -112,5 +117,3 @@ int main() {
 //    std::cout << "A*A" << std::endl;
 //    LUA=A*A;
 //    printMatriz(LUA);
-    return EXIT_FAILURE;
-}
