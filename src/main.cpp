@@ -52,18 +52,25 @@ int main() {
 //***********************************************************
 
 //LUDoolittle con pivoteo------------------------------------
-    anpi::Matrix<float> A = {{2.5, -4, 5.3},
-                             {6.8,  4, 3.6},
-                             {3,    3, 3  }};
+    anpi::Matrix<float> A = {{1,  2, -1},
+                             {3,  1,  1},
+                             {1, -1,  2}};
     anpi::Matrix<float> LU;
     std::vector<unsigned int> permut(3);
+    std::vector<float> x(3);
+    std::vector<float> b{-3, 4, 6};
 
     anpi::luDoolittle(A, LU, permut);
-    std::cout << "orden:   " << std::endl;
 
-    printVector(permut);
     std::cout << std::endl;
     printMatriz(LU);
+
+    anpi::solveLU(LU, x, b, permut);
+
+    std::cout << "orden:   " << std::endl;
+    printVector(permut);
+    std::cout << std::endl << "resultado" << std::endl;
+    printVector(x);
 //-----------------------------------------------------------
 
     return EXIT_FAILURE;

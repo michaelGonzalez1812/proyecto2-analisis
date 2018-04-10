@@ -15,11 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00bfc305-defc-4a27-9263-67380b9b8e8a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/tarea03.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/tarea03.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/tarea03" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/tarea03" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/include/LUDoolittle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/LUDoolittle.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
@@ -34,11 +30,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="715">
-              <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+            <state relative-caret-position="13">
+              <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
               <folding>
                 <element signature="e#207#225#0" expanded="true" />
               </folding>
@@ -46,14 +42,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LUDoolittle.hpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="LUDoolittle.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/LUDoolittle.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+            <state relative-caret-position="218">
+              <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
               <folding>
                 <element signature="e#208#224#0" expanded="true" />
-                <element signature="e#2307#2319#0" expanded="true" />
+                <element signature="e#3891#3903#0" expanded="true" />
+                <element signature="e#4861#4873#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -82,8 +79,8 @@
         <option value="$PROJECT_DIR$/include/Matrix.tpp" />
         <option value="$PROJECT_DIR$/test/testMatrix.cpp" />
         <option value="$PROJECT_DIR$/include/LUCrout.hpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/include/LUDoolittle.hpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
@@ -179,7 +176,7 @@
       <workItem from="1522686623926" duration="2042000" />
       <workItem from="1522796632813" duration="31853000" />
       <workItem from="1523221917039" duration="2770000" />
-      <workItem from="1523251237934" duration="13103000" />
+      <workItem from="1523251237934" duration="24651000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1522798087001</created>
@@ -227,30 +224,39 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="70455000" />
+    <option name="totallyTimeSpent" value="82003000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
+    <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16901408" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" x="1431" y="24" width="1855" height="1056" id="Messages" order="7" weight="0.64118564" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.16901408" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
+      <window_info anchor="bottom" x="1431" y="24" width="1855" height="1056" id="Messages" order="7" weight="0.35569423" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32837528" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32951945" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32917318" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32761312" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32970452" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917318" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3993135" />
+      <window_info anchor="bottom" x="438" y="52" width="928" height="716" id="Debug" order="3" type="WINDOWED" weight="0.3978159" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,7 +275,14 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/LUDoolittle.hpp</url>
+          <line>158</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -279,7 +292,8 @@
           <caret line="77" column="51" lean-forward="true" selection-start-line="77" selection-start-column="51" selection-end-line="77" selection-end-column="51" />
           <folding>
             <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#2307#2319#0" expanded="true" />
+            <element signature="e#3891#3903#0" expanded="true" />
+            <element signature="e#4861#4873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -316,7 +330,8 @@
           <caret line="93" lean-forward="true" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#2307#2319#0" expanded="true" />
+            <element signature="e#3891#3903#0" expanded="true" />
+            <element signature="e#4861#4873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -379,7 +394,8 @@
           <caret line="63" column="10" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="51" />
           <folding>
             <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#2307#2319#0" expanded="true" />
+            <element signature="e#3891#3903#0" expanded="true" />
+            <element signature="e#4861#4873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -416,7 +432,8 @@
           <caret line="63" column="10" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="51" />
           <folding>
             <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#2307#2319#0" expanded="true" />
+            <element signature="e#3891#3903#0" expanded="true" />
+            <element signature="e#4861#4873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -453,7 +470,8 @@
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#2307#2319#0" expanded="true" />
+            <element signature="e#3891#3903#0" expanded="true" />
+            <element signature="e#4861#4873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -503,7 +521,8 @@
           <caret line="16" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#2307#2319#0" expanded="true" />
+            <element signature="e#3891#3903#0" expanded="true" />
+            <element signature="e#4861#4873#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -580,23 +599,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/include/LUDoolittle.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="68" column="24" selection-start-line="68" selection-start-column="24" selection-end-line="68" selection-end-column="24" />
+        <state relative-caret-position="218">
+          <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
           <folding>
-            <element signature="e#207#225#0" expanded="true" />
+            <element signature="e#208#224#0" expanded="true" />
+            <element signature="e#3891#3903#0" expanded="true" />
+            <element signature="e#4861#4873#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/LUDoolittle.hpp">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="78" column="26" lean-forward="true" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
+        <state relative-caret-position="13">
+          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
           <folding>
-            <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#2307#2319#0" expanded="true" />
+            <element signature="e#207#225#0" expanded="true" />
           </folding>
         </state>
       </provider>
