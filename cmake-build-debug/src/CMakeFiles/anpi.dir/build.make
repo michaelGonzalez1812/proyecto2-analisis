@@ -81,17 +81,43 @@ src/CMakeFiles/anpi.dir/main.cpp.o.provides: src/CMakeFiles/anpi.dir/main.cpp.o.
 src/CMakeFiles/anpi.dir/main.cpp.o.provides.build: src/CMakeFiles/anpi.dir/main.cpp.o
 
 
+src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o: src/CMakeFiles/anpi.dir/flags.make
+src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o: ../include/Robot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/anpi.dir/__/include/Robot.cpp.o -c "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.cpp"
+
+src/CMakeFiles/anpi.dir/__/include/Robot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/anpi.dir/__/include/Robot.cpp.i"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.cpp" > CMakeFiles/anpi.dir/__/include/Robot.cpp.i
+
+src/CMakeFiles/anpi.dir/__/include/Robot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/anpi.dir/__/include/Robot.cpp.s"
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.cpp" -o CMakeFiles/anpi.dir/__/include/Robot.cpp.s
+
+src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o.requires:
+
+.PHONY : src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o.requires
+
+src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o.provides: src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o.requires
+	$(MAKE) -f src/CMakeFiles/anpi.dir/build.make src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o.provides.build
+.PHONY : src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o.provides
+
+src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o.provides.build: src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o
+
+
 # Object files for target anpi
 anpi_OBJECTS = \
-"CMakeFiles/anpi.dir/main.cpp.o"
+"CMakeFiles/anpi.dir/main.cpp.o" \
+"CMakeFiles/anpi.dir/__/include/Robot.cpp.o"
 
 # External object files for target anpi
 anpi_EXTERNAL_OBJECTS =
 
 src/libanpi.a: src/CMakeFiles/anpi.dir/main.cpp.o
+src/libanpi.a: src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o
 src/libanpi.a: src/CMakeFiles/anpi.dir/build.make
 src/libanpi.a: src/CMakeFiles/anpi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libanpi.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libanpi.a"
 	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && $(CMAKE_COMMAND) -P CMakeFiles/anpi.dir/cmake_clean_target.cmake
 	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src" && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/anpi.dir/link.txt --verbose=$(VERBOSE)
 
@@ -101,6 +127,7 @@ src/CMakeFiles/anpi.dir/build: src/libanpi.a
 .PHONY : src/CMakeFiles/anpi.dir/build
 
 src/CMakeFiles/anpi.dir/requires: src/CMakeFiles/anpi.dir/main.cpp.o.requires
+src/CMakeFiles/anpi.dir/requires: src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o.requires
 
 .PHONY : src/CMakeFiles/anpi.dir/requires
 

@@ -44,6 +44,6 @@ endif()
 
 CONFIGURE_FILE(${CMAKE_SOURCE_DIR}/cmake/AnpiConfig.hpp.in ${CMAKE_SOURCE_DIR}/include/AnpiConfig.hpp)
 
-add_library(anpi STATIC ${SRCS} ${HEADERS})
+add_library(anpi STATIC ${SRCS} ${HEADERS} ../include/Robot.cpp ../include/Robot.h)
 add_executable(tarea03 main.cpp)
 target_link_libraries(tarea03 anpi python2.7)

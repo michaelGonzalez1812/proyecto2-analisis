@@ -249,6 +249,12 @@
 		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/benchmarks/benchmarkMatrixAdd.cpp">
 			<Option target="benchmark"/>
 		</Unit>
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.cpp">
+			<Option target="anpi"/>
+		</Unit>
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.h">
+			<Option target="anpi"/>
+		</Unit>
 		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/main.cpp">
 			<Option target="tarea03"/>
 			<Option target="anpi"/>

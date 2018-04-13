@@ -151,6 +151,33 @@ anpi/fast:
 	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/anpi.dir/build.make src/CMakeFiles/anpi.dir/build
 .PHONY : anpi/fast
 
+__/include/Robot.o: __/include/Robot.cpp.o
+
+.PHONY : __/include/Robot.o
+
+# target to build an object file
+__/include/Robot.cpp.o:
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/anpi.dir/build.make src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o
+.PHONY : __/include/Robot.cpp.o
+
+__/include/Robot.i: __/include/Robot.cpp.i
+
+.PHONY : __/include/Robot.i
+
+# target to preprocess a source file
+__/include/Robot.cpp.i:
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/anpi.dir/build.make src/CMakeFiles/anpi.dir/__/include/Robot.cpp.i
+.PHONY : __/include/Robot.cpp.i
+
+__/include/Robot.s: __/include/Robot.cpp.s
+
+.PHONY : __/include/Robot.s
+
+# target to generate assembly for a file
+__/include/Robot.cpp.s:
+	cd "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug" && $(MAKE) -f src/CMakeFiles/anpi.dir/build.make src/CMakeFiles/anpi.dir/__/include/Robot.cpp.s
+.PHONY : __/include/Robot.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -192,6 +219,9 @@ help:
 	@echo "... tarea03"
 	@echo "... rebuild_cache"
 	@echo "... anpi"
+	@echo "... __/include/Robot.o"
+	@echo "... __/include/Robot.i"
+	@echo "... __/include/Robot.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

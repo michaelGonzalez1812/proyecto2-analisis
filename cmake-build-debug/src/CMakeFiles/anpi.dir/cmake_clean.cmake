@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/anpi.dir/main.cpp.o"
+  "CMakeFiles/anpi.dir/__/include/Robot.cpp.o"
   "libanpi.pdb"
   "libanpi.a"
 )

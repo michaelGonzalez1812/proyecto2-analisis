@@ -86,6 +86,10 @@ Matrix.tpp
 bits/MatrixArithmetic.hpp
 ../include/bits/MatrixArithmetic.hpp
 
+../include/Robot.hpp
+LUDoolittle.hpp
+../include/LUDoolittle.hpp
+
 ../include/bits/MatrixArithmetic.hpp
 Intrinsics.hpp
 ../include/bits/Intrinsics.hpp
@@ -103,4 +107,6 @@ LUCrout.hpp
 -
 LUDoolittle.hpp
 /home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/LUDoolittle.hpp
+Robot.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/Robot.hpp
 

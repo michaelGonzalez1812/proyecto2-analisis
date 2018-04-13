@@ -1,2 +1,2 @@
-/usr/bin/ar qc libanpi.a  CMakeFiles/anpi.dir/main.cpp.o
+/usr/bin/ar qc libanpi.a  CMakeFiles/anpi.dir/main.cpp.o CMakeFiles/anpi.dir/__/include/Robot.cpp.o
 /usr/bin/ranlib libanpi.a

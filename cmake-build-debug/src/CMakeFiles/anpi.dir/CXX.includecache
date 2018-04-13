@@ -86,9 +86,69 @@ Matrix.tpp
 bits/MatrixArithmetic.hpp
 ../include/bits/MatrixArithmetic.hpp
 
+../include/Robot.hpp
+LUDoolittle.hpp
+../include/LUDoolittle.hpp
+
 ../include/bits/MatrixArithmetic.hpp
 Intrinsics.hpp
 ../include/bits/Intrinsics.hpp
+type_traits
+-
+
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Exception.hpp
+exception
+-
+
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/LUDoolittle.hpp
+cmath
+-
+limits
+-
+functional
+-
+algorithm
+-
+Exception.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Exception.hpp
+Matrix.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Matrix.hpp
+
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Matrix.hpp
+cstddef
+-
+cstring
+-
+cassert
+-
+memory
+-
+initializer_list
+-
+AnpiConfig.hpp
+-
+Allocator.hpp
+-
+typeinfo
+-
+Matrix.tpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Matrix.tpp
+
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Matrix.tpp
+bits/MatrixArithmetic.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/bits/MatrixArithmetic.hpp
+
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.cpp
+Robot.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.hpp
+
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.hpp
+LUDoolittle.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/LUDoolittle.hpp
+
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/bits/MatrixArithmetic.hpp
+Intrinsics.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/bits/Intrinsics.hpp
 type_traits
 -
 
@@ -103,4 +163,6 @@ LUCrout.hpp
 -
 LUDoolittle.hpp
 /home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/LUDoolittle.hpp
+Robot.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/Robot.hpp
 

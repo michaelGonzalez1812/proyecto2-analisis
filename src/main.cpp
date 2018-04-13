@@ -13,6 +13,7 @@
 #include <vector>
 #include <LUCrout.hpp>
 #include "LUDoolittle.hpp"
+#include "Robot.hpp"
 
 /**
  * Herramienta para visualizar matrices
@@ -52,26 +53,53 @@ int main() {
 //***********************************************************
 
 //LUDoolittle con pivoteo------------------------------------
-    anpi::Matrix<float> A = {{1,  2, -1},
-                             {3,  1,  1},
-                             {1, -1,  2}};
-    anpi::Matrix<float> LU;
-    std::vector<unsigned int> permut(3);
-    std::vector<float> x(3);
-    std::vector<float> b{-3, 4, 6};
-
-    anpi::luDoolittle(A, LU, permut);
-
-    std::cout << std::endl;
-    printMatriz(LU);
-
-    anpi::solveLU(LU, x, b, permut);
-
-    std::cout << "orden:   " << std::endl;
-    printVector(permut);
-    std::cout << std::endl << "resultado" << std::endl;
-    printVector(x);
+//    anpi::Matrix<float> A = {{1,  2, -1},
+//                             {3,  1,  1},
+//                             {1, -1,  2}};
+//    anpi::Matrix<float> LU;
+//    std::vector<unsigned int> permut(3);
+//    std::vector<float> x(3);
+//    std::vector<float> b{-3, 4, 6};
+//
+//    anpi::luDoolittle(A, LU, permut);
+//
+//    std::cout << std::endl;
+//    printMatriz(LU);
+//
+//    anpi::solveLU(LU, x, b, permut);
+//
+//    std::cout << "orden:   " << std::endl;
+//    printVector(permut);
+//    std::cout << std::endl << "resultado" << std::endl;
+//    printVector(x);
 //-----------------------------------------------------------
+
+//mapeo matriz vector----------------------------------------
+//    const unsigned int m1 = 2;
+//    const unsigned int n1 = 1;
+//    const unsigned int m2 = 2;
+//    const unsigned int M = 4;
+//    const unsigned int N = 3;
+//    unsigned int x = 0;
+//    anpi::mapeoMatrizVector(m1, n1, m2, M, N, x);
+//
+//    std::cout << x;
+//------------------------------------------------------------
+
+
+//mapeo vector matriz-----------------------------------------
+//    unsigned int m1 = 0;
+//    unsigned int n1 = 0;
+//    unsigned int m2 = 0;
+//    unsigned int n2 = 0;
+//    const unsigned int M = 4;
+//    const unsigned int N = 3;
+//    unsigned int x = 7;
+//    anpi::mapeoVectorMatriz(m1, n1, m2, n2, M, N, x);
+//
+//    std::cout << "m1= " << m1 << "   n1: " <<  n1 << std::endl;
+//    std::cout << "m2= " << m2 << "   n2: " <<  n2 << std::endl;
+//--------------------------------------------------------------
 
     return EXIT_FAILURE;
 }

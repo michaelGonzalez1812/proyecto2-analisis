@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.cpp" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o"
   "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/main.cpp" "/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
