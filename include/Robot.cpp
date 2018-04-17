@@ -20,8 +20,10 @@
      */
     void anpi::mapeoMatrizVector(const unsigned int& m1, const unsigned int& n1,
                            const unsigned int& m2,
-                           const unsigned int& M, const unsigned int& N,
+                           const unsigned int& Mm, const unsigned int& Nn,
                            unsigned int& x){
+        unsigned int M = Mm - 1;
+        unsigned int N = Nn - 1;
         x = 0;
         if (m1 == m2)
             x = m1 * N + n1;
@@ -44,9 +46,10 @@
      */
     void anpi::mapeoVectorMatriz(unsigned int& m1, unsigned int& n1,
                            unsigned int& m2, unsigned int& n2,
-                           const unsigned int& M, const unsigned int& N,
+                           const unsigned int& Mm, const unsigned int& Nn,
                            const unsigned int& x){
-
+        unsigned int M = Mm - 1;
+        unsigned int N = Nn - 1;
         unsigned int inicioCol = M * N + N;
 
         if (x < inicioCol){

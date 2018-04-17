@@ -41,6 +41,92 @@ namespace anpi {
                            unsigned int& m2, unsigned int& n2,
                            const unsigned int& M, const unsigned int& N,
                            const unsigned int& x);
+
+    /**
+     * Genera las ecuaciones para los nodos
+     * @tparam T
+     * @param M [out] matriz de factores de las ecuaciones
+     * @param b [out] lado derecho de las ecuaciones
+     * @param Rm Filas de la matriz de nodos
+     * @param Rn Columnas de la matriz de nodos
+     */
+    template <typename T>
+    void ecuacionesNodos(anpi::Matrix<T>& M, const std::vector<T>& b,
+                           const unsigned int Rm, const unsigned int Rn){
+
+        unsigned int posIr = 0; //posicion en el arreglo x
+        unsigned int posEcuacion = 0;
+
+        for(unsigned int m = 0; m < Rm; ++m) {
+            for(unsigned int n = 0; n < Rn; ++n) {
+                if (m == 0) {
+                    if (n == 0) { // Esquina superior izquierda
+                        anpi::mapeoMatrizVector(m, n, 1, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                        anpi::mapeoMatrizVector(m, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                    } else if (n == Rn - 1) { // Esquina superior derecha
+                        anpi::mapeoMatrizVector(m, n, 1, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                        anpi::mapeoMatrizVector(m, n-1, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = 1;
+                    } else { // Borde superior
+                        anpi::mapeoMatrizVector(m, n-1, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = 1;
+                        anpi::mapeoMatrizVector(1, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                        anpi::mapeoMatrizVector(m, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                    }
+                } else if (n == 0) {
+                    if (m == Rm - 1) { // Esquina inferior izquierda
+                        anpi::mapeoMatrizVector(m-1, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = 1;
+                        anpi::mapeoMatrizVector(m, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                    } else { // Borde izquierdo
+                        anpi::mapeoMatrizVector(m-1, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = 1;
+                        anpi::mapeoMatrizVector(m, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                        anpi::mapeoMatrizVector(m, n, m+1, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                    }
+                } else if (m == Rm - 1) {
+                    if (n == Rn - 1) { // Esquina inferior derecha
+                        anpi::mapeoMatrizVector(m, n-1, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = 1;
+                        anpi::mapeoMatrizVector(m-1, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = 1;
+                    } else { // Borde inferior
+                        anpi::mapeoMatrizVector(m, n-1, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = 1;
+                        anpi::mapeoMatrizVector(m-1, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = 1;
+                        anpi::mapeoMatrizVector(m, n, m, Rm, Rn, posIr);
+                        M[posEcuacion][posIr] = -1;
+                    }
+                } else if (n == Rn - 1) { // Borde derecho
+                    anpi::mapeoMatrizVector(m-1, n, m, Rm, Rn, posIr);
+                    M[posEcuacion][posIr] = 1;
+                    anpi::mapeoMatrizVector(m, n-1, m, Rm, Rn, posIr);
+                    M[posEcuacion][posIr] = 1;
+                    anpi::mapeoMatrizVector(m, n, m+1, Rm, Rn, posIr);
+                    M[posEcuacion][posIr] = -1;
+                } else { // Internos
+                    anpi::mapeoMatrizVector(m-1, n, m, Rm, Rn, posIr);
+                    M[posEcuacion][posIr] = 1;
+                    anpi::mapeoMatrizVector(m, n-1, m, Rm, Rn, posIr);
+                    M[posEcuacion][posIr] = 1;
+                    anpi::mapeoMatrizVector(m, n, m+1, Rm, Rn, posIr);
+                    M[posEcuacion][posIr] = -1;
+                    anpi::mapeoMatrizVector(m, n, m, Rm, Rn, posIr);
+                    M[posEcuacion][posIr] = -1;
+                }
+                ++posEcuacion;
+            }
+        }
+    }
 }
 
 

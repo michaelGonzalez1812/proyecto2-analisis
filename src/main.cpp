@@ -75,11 +75,11 @@ int main() {
 //-----------------------------------------------------------
 
 //mapeo matriz vector----------------------------------------
-//    const unsigned int m1 = 2;
-//    const unsigned int n1 = 1;
-//    const unsigned int m2 = 2;
-//    const unsigned int M = 4;
-//    const unsigned int N = 3;
+//    const unsigned int m1 = 1;
+//    const unsigned int n1 = 0;
+//    const unsigned int m2 = 1;
+//    const unsigned int M = 5;
+//    const unsigned int N = 4;
 //    unsigned int x = 0;
 //    anpi::mapeoMatrizVector(m1, n1, m2, M, N, x);
 //
@@ -101,6 +101,13 @@ int main() {
 //    std::cout << "m2= " << m2 << "   n2: " <<  n2 << std::endl;
 //--------------------------------------------------------------
 
+    anpi::Matrix<float> M(17, 17);
+    std::vector<float> x(17);
+    std::vector<float> b(17);
+
+    anpi::ecuacionesNodos(M, x, b, 3, 4);
+
+    printMatriz(M);
     return EXIT_FAILURE;
 }
 
