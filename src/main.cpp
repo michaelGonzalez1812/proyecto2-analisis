@@ -101,13 +101,23 @@ int main() {
 //    std::cout << "m2= " << m2 << "   n2: " <<  n2 << std::endl;
 //--------------------------------------------------------------
 
-    anpi::Matrix<float> M(17, 17);
-    std::vector<float> x(17);
-    std::vector<float> b(17);
+    anpi::Matrix<float> M(7, 7);
+    std::vector<float> x(7);
+    std::vector<float> b {-1, 0, 0, 0, 1, 0, 0};
+    std::vector<unsigned int> permut(7);
+    anpi::Matrix<float> LU;
+    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
 
-    anpi::ecuacionesNodos(M, x, b, 3, 4);
+    anpi::ecuacionesNodos(M, 2, 3);
+    anpi::ecuacionesMallas(M, r, 2, 3);
+
+    anpi::luDoolittle(M, LU, permut);
+
+    //anpi::solveLU(LU, x, b, permut);
 
     printMatriz(M);
+    std::cout << std::endl << "x:   ";
+    printVector(x);
     return EXIT_FAILURE;
 }
 

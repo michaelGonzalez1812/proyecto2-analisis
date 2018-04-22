@@ -252,7 +252,7 @@
 		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.cpp">
 			<Option target="anpi"/>
 		</Unit>
-		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.h">
+		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/include/Robot.hpp">
 			<Option target="anpi"/>
 		</Unit>
 		<Unit filename="/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/main.cpp">

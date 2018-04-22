@@ -42,6 +42,28 @@ namespace anpi {
                            const unsigned int& M, const unsigned int& N,
                            const unsigned int& x);
 
+    template <typename T>
+    void ecuacionesMallas(anpi::Matrix<T>& M, const std::vector<T>& r,
+                          const unsigned int Rm, const unsigned int Rn) {
+        unsigned int posEcuacion = (Rm * Rn-1) + 1;
+        unsigned int x = 0;
+
+        for (unsigned int m = 0; m < Rm-1; ++m) {
+            for (unsigned int n = 0; n < Rn-1; ++n) {
+                if(m == Rm-2 && n == Rn-2) break;
+
+                anpi::mapeoMatrizVector(m, n, m, Rm, Rn, x);
+                M[posEcuacion][x] = r[x];
+                anpi::mapeoMatrizVector(m, n+1, m+1, Rm, Rn, x);
+                M[posEcuacion][x] = r[x];
+                anpi::mapeoMatrizVector(m, n, m+1, Rm, Rn, x);
+                M[posEcuacion][x] = -r[x];
+                anpi::mapeoMatrizVector(m+1, n, m+1, Rm, Rn, x);
+                M[posEcuacion][x] = -r[x];
+            }
+        }
+    }
+
     /**
      * Genera las ecuaciones para los nodos
      * @tparam T
@@ -51,8 +73,8 @@ namespace anpi {
      * @param Rn Columnas de la matriz de nodos
      */
     template <typename T>
-    void ecuacionesNodos(anpi::Matrix<T>& M, const std::vector<T>& b,
-                           const unsigned int Rm, const unsigned int Rn){
+    void ecuacionesNodos(anpi::Matrix<T>& M,
+                         const unsigned int Rm, const unsigned int Rn){
 
         unsigned int posIr = 0; //posicion en el arreglo x
         unsigned int posEcuacion = 0;
@@ -73,7 +95,7 @@ namespace anpi {
                     } else { // Borde superior
                         anpi::mapeoMatrizVector(m, n-1, m, Rm, Rn, posIr);
                         M[posEcuacion][posIr] = 1;
-                        anpi::mapeoMatrizVector(1, n, m, Rm, Rn, posIr);
+                        anpi::mapeoMatrizVector(m, n, m+1, Rm, Rn, posIr);
                         M[posEcuacion][posIr] = -1;
                         anpi::mapeoMatrizVector(m, n, m, Rm, Rn, posIr);
                         M[posEcuacion][posIr] = -1;
