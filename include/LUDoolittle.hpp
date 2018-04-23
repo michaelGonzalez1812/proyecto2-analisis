@@ -79,7 +79,7 @@ namespace anpi {
         const T tol = 0.0001; //tolerancia para division entre 0
 
         if (A.rows() == A.cols()) {
-            std::vector<T> bigxrow(3);
+            std::vector<T> bigxrow(A.rows());
             LU = A;
             T cte = T(0);
 

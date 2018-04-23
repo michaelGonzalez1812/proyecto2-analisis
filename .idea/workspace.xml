@@ -15,12 +15,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00bfc305-defc-4a27-9263-67380b9b8e8a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/tarea03.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/tarea03.dir/main.cpp.o" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/tarea03" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/tarea03" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tarea03.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tarea03.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/include/LUDoolittle.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/LUDoolittle.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Robot.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Robot.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
@@ -35,26 +34,13 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
-              <folding>
-                <element signature="e#207#225#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Robot.hpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Robot.hpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="91">
-              <caret line="97" column="57" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
+            <state relative-caret-position="301">
+              <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
               <folding>
-                <element signature="e#1554#1566#0" expanded="true" />
-                <element signature="e#1836#1848#0" expanded="true" />
+                <element signature="e#1666#1678#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -94,10 +80,10 @@
         <option value="$PROJECT_DIR$/include/Matrix.tpp" />
         <option value="$PROJECT_DIR$/test/testMatrix.cpp" />
         <option value="$PROJECT_DIR$/include/LUCrout.hpp" />
-        <option value="$PROJECT_DIR$/include/LUDoolittle.hpp" />
         <option value="$PROJECT_DIR$/include/Robot.cpp" />
-        <option value="$PROJECT_DIR$/include/Robot.hpp" />
         <option value="$PROJECT_DIR$/src/main.cpp" />
+        <option value="$PROJECT_DIR$/include/LUDoolittle.hpp" />
+        <option value="$PROJECT_DIR$/include/Robot.hpp" />
       </list>
     </option>
   </component>
@@ -109,7 +95,7 @@
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-108" />
+    <option name="x" value="29" />
     <option name="y" value="764" />
     <option name="width" value="1301" />
     <option name="height" value="772" />
@@ -242,7 +228,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="99351000" />
+    <option name="totallyTimeSpent" value="104960000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -257,16 +243,16 @@
     <frame x="65" y="764" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16901408" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16901408" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
-      <window_info anchor="bottom" x="1431" y="24" width="1855" height="1056" id="Messages" order="7" visible="true" weight="0.35569423" />
+      <window_info anchor="bottom" x="1431" y="24" width="1855" height="1056" id="Messages" order="7" weight="0.35569423" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32761312" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" x="201" y="975" width="620" height="328" id="Run" order="2" type="WINDOWED" weight="0.32761312" />
+      <window_info anchor="bottom" x="715" y="52" width="651" height="716" id="Run" order="2" type="WINDOWED" weight="0.32761312" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32917318" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917318" />
-      <window_info anchor="bottom" x="2213" y="293" width="928" height="716" id="Debug" order="3" type="WINDOWED" weight="0.3978159" />
+      <window_info anchor="bottom" x="65" y="52" width="651" height="716" id="Debug" order="3" type="WINDOWED" weight="0.3978159" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -310,21 +296,35 @@
           <line>158</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/LUDoolittle.hpp</url>
+          <line>78</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/include/LUDoolittle.hpp</url>
+          <line>95</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="7" />
+      <option name="time" value="9" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="CMakeRunConfiguration">
+        <watch expression="A.rows()" language="ObjectiveC" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>A.rows()</expression-string>
+        <language-id>ObjectiveC</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
-          <caret line="56" column="41" selection-start-line="56" selection-start-column="41" selection-end-line="56" selection-end-column="41" />
-          <folding>
-            <element signature="e#207#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/LUDoolittle.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2628">
@@ -664,17 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/LUDoolittle.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="150" column="28" selection-start-line="150" selection-start-column="28" selection-end-line="150" selection-end-column="28" />
-          <folding>
-            <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#4994#5006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Robot.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -682,23 +671,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
+    <entry file="file:///usr/include/c++/5/ext/new_allocator.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="97" column="57" selection-start-line="97" selection-start-column="57" selection-end-line="97" selection-end-column="57" />
+        <state relative-caret-position="196">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/LUDoolittle.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="82" column="8" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="8" />
           <folding>
-            <element signature="e#1554#1566#0" expanded="true" />
-            <element signature="e#1836#1848#0" expanded="true" />
+            <element signature="e#208#224#0" expanded="true" />
+            <element signature="e#4994#5006#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="113" column="4" lean-forward="true" selection-start-line="113" selection-start-column="4" selection-end-line="113" selection-end-column="4" />
+        <state relative-caret-position="163">
+          <caret line="118" column="38" selection-start-line="118" selection-start-column="38" selection-end-line="118" selection-end-column="38" />
           <folding>
             <element signature="e#207#225#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="50" column="16" lean-forward="true" selection-start-line="50" selection-start-column="16" selection-end-line="50" selection-end-column="16" />
+          <folding>
+            <element signature="e#1666#1678#0" expanded="true" />
           </folding>
         </state>
       </provider>
