@@ -354,11 +354,23 @@ namespace anpi
                               const Matrix<T,Alloc>& b);
 
     template<typename T,class Alloc>
+    void operator/=(const Matrix<T,Alloc>& a,
+                              const T& b);
+
+    template<typename T,class Alloc>
     std::vector<T, std::allocator<T>> operator*(const Matrix<T,Alloc>& a,
                               const std::vector<T, std::allocator<T>>& b);
 
     //@}
 
+    /**
+     * Calcula la norma de una matriz.
+     * @tparam T
+     * @param M
+     * @param norma
+     */
+    template <typename T>
+    void matrixAbs(const anpi::Matrix<T>& M, T& norma);
 } // namespace ANPI
 
 

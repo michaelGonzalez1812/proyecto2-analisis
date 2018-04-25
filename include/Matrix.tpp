@@ -440,6 +440,16 @@ namespace anpi {
 
     }
 
+    template<typename T,class Alloc>
+    void operator/=(Matrix<T,Alloc>& a,
+                              const T& b){
+        for (unsigned int i = 0; i < a.rows(); ++i) {
+            for (unsigned int j = 0; j < a.cols(); ++j) {
+                a[i][j] /= b;
+            }
+        }
+    }
+
 
     template<typename T, class Alloc>
     std::vector<T, std::allocator<T>> operator*(const Matrix<T, Alloc> &a,
@@ -455,6 +465,17 @@ namespace anpi {
         }
         return resultado;
 
+    }
+
+    template <typename T>
+    void matrixAbs(const anpi::Matrix<T>& M, T& norma){
+        T sum = 0;
+        for (unsigned int i = 0; i < M.rows(); ++i) {
+            for (unsigned int j = 0; j < M.cols(); ++j) {
+                sum += M[i][j]*M[i][j];
+            }
+        }
+        norma = std::sqrt(sum);
     }
 
 } // namespace ANPI

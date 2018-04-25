@@ -102,24 +102,32 @@ int main() {
 //--------------------------------------------------------------
 
 //Montar ecuaciones---------------------------------------------
-    anpi::Matrix<float> M(7, 7);
-    std::vector<float> x(7);
-    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
-    std::vector<unsigned int> permut(7);
-    anpi::Matrix<float> LU;
-    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
-
-    anpi::ecuacionesNodos(M, b, 2, 3);
-    anpi::ecuacionesMallas(M, r, 2, 3);
-
-    anpi::luDoolittle(M, LU, permut);
-
-    anpi::solveLU(LU, x, b, permut);
-
-    printMatriz(M);
-    std::cout << std::endl << "x:   ";
-    printVector(x);
+//    anpi::Matrix<float> M(7, 7);
+//    std::vector<float> x(7);
+//    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
+//    std::vector<unsigned int> permut(7);
+//    anpi::Matrix<float> LU;
+//    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
+//
+//    anpi::ecuacionesNodos(M, b, 2, 3);
+//    anpi::ecuacionesMallas(M, r, 2, 3);
+//
+//    anpi::luDoolittle(M, LU, permut);
+//
+//    anpi::solveLU(LU, x, b, permut);
+//
+//    printMatriz(M);
+//    std::cout << std::endl << "x:   ";
+//    printVector(x);
 //---------------------------------------------------------------
+
+    anpi::Matrix<float> M {{2, 6},
+                           {5, 10}};
+    float norma;
+    anpi::matrixAbs(M, norma);
+    std::cout << "norma:  " << norma << std::endl;
+    M/=norma;
+    printMatriz(M);
     return EXIT_FAILURE;
 }
 
