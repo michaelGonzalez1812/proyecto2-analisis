@@ -47,6 +47,12 @@ void printVector(std::vector<T> &A) {
     std::cout << "}" << std::endl;
 }
 
+void castVector(const std::vector<unsigned int>& x, std::vector<int>& y) {
+    for (unsigned int i = 0; i < x.size(); ++i) {
+        y.push_back(x[i]);
+    }
+}
+
 int main() {
 //***********************************************************
 //    Some example code
@@ -102,34 +108,34 @@ int main() {
 //--------------------------------------------------------------
 
 //Montar ecuaciones---------------------------------------------
-    anpi::Matrix<float> M(7, 7);
-    std::vector<float> i(7);
-    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
-    std::vector<unsigned int> permut(7);
-    anpi::Matrix<float> LU;
-    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
-    std::vector<unsigned int> x;
-    std::vector<unsigned int> y;
-
-    anpi::ecuacionesNodos(M, b, 2, 3);
-    anpi::ecuacionesMallas(M, r, 2, 3);
-
-    anpi::luDoolittle(M, LU, permut);
-
-    anpi::solveLU(LU, i, b, permut);
-
-    anpi::estrategia1(i, permut, 0, 0, 1, 1, 2, 3, x, y);
-
-    printMatriz(M);
-    std::cout << std::endl << "i:   ";
-    printVector(i);
-    std::cout << std::endl << "permut:   ";
-    printVector(permut);
-
-    std::cout<< std::endl << "ruta:    ";
-    for (int j = 0; j < x.size(); ++j) {
-        std::cout << "(" << x[j] << ", " << y[j] << ") ";
-    }
+//    anpi::Matrix<float> M(7, 7);
+//    std::vector<float> i(7);
+//    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
+//    std::vector<unsigned int> permut(7);
+//    anpi::Matrix<float> LU;
+//    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
+//    std::vector<unsigned int> x;
+//    std::vector<unsigned int> y;
+//
+//    anpi::ecuacionesNodos(M, b, 2, 3);
+//    anpi::ecuacionesMallas(M, r, 2, 3);
+//
+//    anpi::luDoolittle(M, LU, permut);
+//
+//    anpi::solveLU(LU, i, b, permut);
+//
+//    anpi::estrategia1(i, permut, 0, 0, 1, 1, 2, 3, x, y);
+//
+//    printMatriz(M);
+//    std::cout << std::endl << "i:   ";
+//    printVector(i);
+//    std::cout << std::endl << "permut:   ";
+//    printVector(permut);
+//
+//    std::cout<< std::endl << "ruta:    ";
+//    for (unsigned int j = 0; j < x.size(); ++j) {
+//        std::cout << "(" << x[j] << ", " << y[j] << ") ";
+//    }
 //---------------------------------------------------------------
 
 //    anpi::Matrix<float> M {{2, 6},
@@ -139,6 +145,9 @@ int main() {
 //    std::cout << "norma:  " << norma << std::endl;
 //    M/=norma;
 //    printMatriz(M);
+
+
+
     return EXIT_FAILURE;
 }
 

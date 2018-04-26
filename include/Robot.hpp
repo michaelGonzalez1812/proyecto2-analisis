@@ -324,5 +324,89 @@ namespace anpi {
             }
         }
     }
+
+    template <typename T>
+    void desplazamientos(const std::vector<T>& I, const std::vector<unsigned int>& permut,
+                         anpi::Matrix<float> dx,
+                         anpi::Matrix<float> dy,
+                         const unsigned int& M, const unsigned int& N) {
+
+        unsigned int arriba;
+        unsigned int derecha;
+        unsigned int abajo;
+        unsigned int izquierda;
+
+        for (unsigned int m = 0; m < M; ++m) {
+            for (unsigned int n = 0; n < N; ++n) {
+                if (m == 0) {
+                    if (n == 0) { // Esquina superior izquierda
+                        anpi::mapeoMatrizVector(0, 0, 1, M, N, abajo);
+                        dx[m][n] = I[permut[0]];
+                        dy[m][n] = I[permut[abajo]];
+                    } else if (n == N - 1) { // Esquina superior derecha
+                        anpi::mapeoMatrizVector(m, n-1, m, M, N, izquierda);
+                        anpi::mapeoMatrizVector(m, n, 1, M, N, abajo);
+                        dx[m][n] = I[permut[izquierda]];
+                        dy[m][n] = I[permut[abajo]];
+                    } else { // Borde superior
+                        anpi::mapeoMatrizVector(0, n-1, 0, M, N, izquierda);
+                        anpi::mapeoMatrizVector(0, n, 1, M, N, abajo);
+                        anpi::mapeoMatrizVector(0, n, 0, M, N, derecha);
+                        dx[m][n] = I[permut[izquierda]] + I[permut[derecha]];
+                        dy[m][n] = I[permut[abajo]];
+                    }
+                } else if (n == 0) {
+                    if (m == M - 1) { // Esquina inferior izquierda
+                        mapeoMatrizVector(m, 0, m, M, N, derecha);
+                        mapeoMatrizVector(m-1, 0, m, M, N, arriba);
+                        dx[m][n] = I[permut[derecha]];
+                        dy[m][n] = I[permut[arriba]];
+                    } else { // Borde izquierdo
+                        mapeoMatrizVector(m-1, 0, m, M, N, arriba);
+                        mapeoMatrizVector(m, 0, m, M, N, derecha);
+                        mapeoMatrizVector(m, 0, m+1, M, N, abajo);
+                        dx[m][n] = I[permut[derecha]];
+                        dy[m][n] = I[permut[arriba]] + I[permut[abajo]];
+                    }
+                } else if (m == M - 1) {
+                    if (n == N - 1) { // Esquina inferior derecha
+                        anpi::mapeoMatrizVector(m-1, n, m, M, N, arriba);
+                        anpi::mapeoMatrizVector(m, n-1, m, M, N, izquierda);
+                        dx[m][n] = I[permut[izquierda]];
+                        dy[m][n] = I[permut[arriba]];
+                    } else { // Borde inferior
+                        anpi::mapeoMatrizVector(m, n-1, m, M, N, izquierda);
+                        anpi::mapeoMatrizVector(m-1, n, m, M, N, arriba);
+                        anpi::mapeoMatrizVector(m, n, m, M, N, derecha);
+                        dx[m][n] = I[permut[izquierda]] + I[permut[derecha]];
+                        dy[m][n] = I[permut[arriba]];
+                    }
+                } else if (n == N - 1) { // Borde derecho
+                    anpi::mapeoMatrizVector(m-1, n, m, M, N, arriba);
+                    anpi::mapeoMatrizVector(m, n-1, m, M, N, izquierda);
+                    anpi::mapeoMatrizVector(m, n, m+1, M, N, abajo);
+                    dx[m][n] = I[permut[izquierda]];
+                    dy[m][n] = I[permut[arriba]] + I[permut[abajo]];
+                } else { // Internos
+                    anpi::mapeoMatrizVector(m-1, n, m, M, N, arriba);
+                    anpi::mapeoMatrizVector(m, n, m, M, N, derecha);
+                    anpi::mapeoMatrizVector(m, n, m+1, M, N, abajo);
+                    anpi::mapeoMatrizVector(m, n-1, m, M, N, izquierda);
+                    dx[m][n] = I[permut[izquierda]] + I[permut[derecha]];
+                    dy[m][n] = I[permut[arriba]] + I[permut[abajo]];
+                }
+            }
+        }
+    }
+
+    template <typename T>
+    void estrategia2(const int& initialM, const int& initialN,
+                     const int& finalM, const int& finalN,
+                     const unsigned int& M, const unsigned int& N,
+                     const anpi::Matrix<float> dx, const anpi::Matrix<float> dy,
+                     std::vector<T>& x, std::vector<T>& y) {
+
+    }
+
 }
 #endif //TAREA03_ROBOT_H

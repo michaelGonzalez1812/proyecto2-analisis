@@ -16,6 +16,11 @@
   <component name="ChangeListManager">
     <list default="true" id="00bfc305-defc-4a27-9263-67380b9b8e8a" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/tarea03.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/tarea03.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/tarea03" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/tarea03" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Robot.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Robot.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
@@ -27,33 +32,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="2">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Robot.hpp" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="512">
-                    <caret line="313" column="65" selection-start-line="313" selection-start-column="65" selection-end-line="313" selection-end-column="65" />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Matrix.hpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/Matrix.hpp">
+      <file leaf-file-name="Robot.hpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="356" column="9" selection-start-line="356" selection-start-column="9" selection-end-line="356" selection-end-column="9" />
+            <state relative-caret-position="517">
+              <caret line="407" lean-forward="true" selection-start-line="407" selection-end-line="407" />
             </state>
           </provider>
         </entry>
@@ -61,23 +47,10 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="542">
-              <caret line="130" column="57" selection-start-line="130" selection-start-column="57" selection-end-line="130" selection-end-column="57" />
+            <state relative-caret-position="367">
+              <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
               <folding>
                 <element signature="e#207#225#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Matrix.tpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/include/Matrix.tpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7974">
-              <caret line="443" column="9" selection-start-line="443" selection-start-column="9" selection-end-line="443" selection-end-column="9" />
-              <folding>
-                <element signature="e#14718#14742#0" expanded="true" />
-                <element signature="e#15683#15695#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -226,7 +199,9 @@
       <workItem from="1524591549327" duration="4512000" />
       <workItem from="1524674862177" duration="8856000" />
       <workItem from="1524690219211" duration="1684000" />
-      <workItem from="1524696890989" duration="14635000" />
+      <workItem from="1524696890989" duration="15335000" />
+      <workItem from="1524759083084" duration="5474000" />
+      <workItem from="1524770819075" duration="3071000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1522798087001</created>
@@ -274,7 +249,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="135362000" />
+    <option name="totallyTimeSpent" value="144607000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,12 +266,11 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24178404" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
-      <window_info anchor="bottom" x="1431" y="24" width="1855" height="1056" id="Messages" order="7" weight="0.35413417" />
-      <window_info anchor="bottom" id="CMake" order="11" weight="0.32837528" />
+      <window_info anchor="bottom" x="1431" y="24" width="1855" height="1056" id="Messages" order="7" weight="0.40561622" />
+      <window_info anchor="bottom" id="CMake" order="11" weight="0.32761312" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32917318" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32917318" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.48673946" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.48673946" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917318" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -307,6 +281,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32917318" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -360,17 +335,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/include/LUDoolittle.hpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2628">
-          <caret line="146" column="16" selection-start-line="146" selection-start-column="16" selection-end-line="146" selection-end-column="16" />
-          <folding>
-            <element signature="e#208#224#0" expanded="true" />
-            <element signature="e#4994#5006#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/include/Matrix.hpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4338">
@@ -659,11 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/PlotPy.tpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1620" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="242">
@@ -714,10 +673,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7974">
           <caret line="443" column="9" selection-start-line="443" selection-start-column="9" selection-end-line="443" selection-end-column="9" />
-          <folding>
-            <element signature="e#14718#14742#0" expanded="true" />
-            <element signature="e#15683#15695#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -728,17 +683,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/include/PlotPy.hpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/include/PlotPy.tpp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="313" column="65" selection-start-line="313" selection-start-column="65" selection-end-line="313" selection-end-column="65" />
+        <state relative-caret-position="517">
+          <caret line="407" lean-forward="true" selection-start-line="407" selection-end-line="407" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="130" column="57" selection-start-line="130" selection-start-column="57" selection-end-line="130" selection-end-column="57" />
+        <state relative-caret-position="367">
+          <caret line="50" column="18" selection-start-line="50" selection-start-column="18" selection-end-line="50" selection-end-column="18" />
           <folding>
             <element signature="e#207#225#0" expanded="true" />
           </folding>
