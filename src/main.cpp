@@ -102,32 +102,43 @@ int main() {
 //--------------------------------------------------------------
 
 //Montar ecuaciones---------------------------------------------
-//    anpi::Matrix<float> M(7, 7);
-//    std::vector<float> x(7);
-//    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
-//    std::vector<unsigned int> permut(7);
-//    anpi::Matrix<float> LU;
-//    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
-//
-//    anpi::ecuacionesNodos(M, b, 2, 3);
-//    anpi::ecuacionesMallas(M, r, 2, 3);
-//
-//    anpi::luDoolittle(M, LU, permut);
-//
-//    anpi::solveLU(LU, x, b, permut);
-//
-//    printMatriz(M);
-//    std::cout << std::endl << "x:   ";
-//    printVector(x);
+    anpi::Matrix<float> M(7, 7);
+    std::vector<float> i(7);
+    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
+    std::vector<unsigned int> permut(7);
+    anpi::Matrix<float> LU;
+    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
+    std::vector<unsigned int> x;
+    std::vector<unsigned int> y;
+
+    anpi::ecuacionesNodos(M, b, 2, 3);
+    anpi::ecuacionesMallas(M, r, 2, 3);
+
+    anpi::luDoolittle(M, LU, permut);
+
+    anpi::solveLU(LU, i, b, permut);
+
+    anpi::estrategia1(i, permut, 0, 0, 1, 1, 2, 3, x, y);
+
+    printMatriz(M);
+    std::cout << std::endl << "i:   ";
+    printVector(i);
+    std::cout << std::endl << "permut:   ";
+    printVector(permut);
+
+    std::cout<< std::endl << "ruta:    ";
+    for (int j = 0; j < x.size(); ++j) {
+        std::cout << "(" << x[j] << ", " << y[j] << ") ";
+    }
 //---------------------------------------------------------------
 
-    anpi::Matrix<float> M {{2, 6},
-                           {5, 10}};
-    float norma;
-    anpi::matrixAbs(M, norma);
-    std::cout << "norma:  " << norma << std::endl;
-    M/=norma;
-    printMatriz(M);
+//    anpi::Matrix<float> M {{2, 6},
+//                           {5, 10}};
+//    float norma;
+//    anpi::matrixAbs(M, norma);
+//    std::cout << "norma:  " << norma << std::endl;
+//    M/=norma;
+//    printMatriz(M);
     return EXIT_FAILURE;
 }
 

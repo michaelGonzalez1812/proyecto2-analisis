@@ -9,8 +9,7 @@
 
 namespace anpi {
 
-
-    /**
+     /**
      * Mapea los indices de los dos nodos terminales de una resistencia a un indice
      * lineal para acceder al vector x.
      * @tparam T
@@ -173,7 +172,157 @@ namespace anpi {
             }
         }
     }
+
+    /**
+     * Determina un path entre el nodo inicial y final tomando como criterio la direccion
+     * de mayor corriente en cada nodo.
+     * @tparam T
+     * @param I [in] corrientes
+     * @param permut [in] orden del arreglo de corrientes
+     * @param initialM [in] Posicion inicial en "m"
+     * @param initialN [in] Posicion inicial en "n"
+     * @param finalM [in] Posicion final en "n"
+     * @param finalN [in] Posicion final en "n"
+     * @param M [in] Cantidad de filas en la matriz de nodos
+     * @param N [in] Cantidad de columnas en la matriz de nodos
+     * @param x [out] arreglo de posiciones x del path
+     * @param y [out] Arreglo de posiciones y del path
+     */
+    template <typename T>
+    void estrategia1(const std::vector<T>& I, const std::vector<unsigned int>& permut,
+                     const int& initialM, const int& initialN,
+                     const int& finalM, const int& finalN,
+                     const unsigned int& M, const unsigned int& N,
+                     std::vector<unsigned int>& x,
+                     std::vector<unsigned int>& y) {
+
+        x = {initialM};
+        y = {initialN};
+        unsigned int arriba;
+        unsigned int derecha;
+        unsigned int abajo;
+        unsigned int izquierda;
+
+        while (x.back() != finalM || y.back() != finalN) {
+            if (x.back() == 0) {
+                if (y.back() == 0) { // Esquina superior izquierda
+                    if (I[permut[0]] < 0) {
+                        x.push_back(1);
+                        y.push_back(0);
+                    } else {
+                        x.push_back(0);
+                        y.push_back(1);
+                    }
+                } else if (y.back() == N - 1) { // Esquina superior derecha
+                    anpi::mapeoMatrizVector(x.back(), y.back()-1, x.back(), M, N, izquierda);
+                    if (I[permut[izquierda]] < 0) {
+                        x.push_back(0);
+                        y.push_back(y.back()-1);
+                    } else {
+                        x.push_back(1);
+                        y.push_back(y.back());
+                    }
+                } else { // Borde superior
+                    anpi::mapeoMatrizVector(0, y.back()-1, 0, M, N, izquierda);
+                    anpi::mapeoMatrizVector(0, y.back(), 1, M, N, abajo);
+                    anpi::mapeoMatrizVector(0, y.back(), 0, M, N, derecha);
+
+                    if (-I[permut[izquierda]] > I[permut[abajo]] > I[permut[derecha]]) {
+                        x.push_back(0);
+                        y.push_back(y.back()-1);
+                    } else if (I[permut[abajo]] > I[permut[derecha]]) {
+                        x.push_back(1);
+                        y.push_back(y.back());
+                    } else {
+                        x.push_back(0);
+                        y.push_back(y.back()+1);
+                    }
+                }
+            } else if (y.back() == 0) {
+                if (x.back() == M - 1) { // Esquina inferior izquierda
+                    mapeoMatrizVector(x.back(), 0, x.back(), M, N, derecha);
+                    if (I[permut[derecha]] > 0){
+                        x.push_back(x.back());
+                        y.push_back(1);
+                    } else {
+                        x.push_back(x.back()-1);
+                        y.push_back(0);
+                    }
+                } else { // Borde izquierdo
+                    mapeoMatrizVector(x.back()-1, 0, x.back(), M, N, arriba);
+                    mapeoMatrizVector(x.back(), 0, x.back(), M, N, derecha);
+                    mapeoMatrizVector(x.back(), 0, x.back()+1, M, N, abajo);
+
+                    if (-I[permut[arriba]] > I[permut[derecha]] > I[permut[abajo]]) {
+                        x.push_back(x.back()-1);
+                        y.push_back(0);
+                    } else if (I[permut[derecha]] > I[permut[abajo]]) {
+                        x.push_back(x.back());
+                        y.push_back(1);
+                    } else {
+                        x.push_back(x.back()+1);
+                        y.push_back(0);
+                    }
+                }
+            } else if (x.back() == M - 1) {
+                if (y.back() == N - 1) { // Esquina inferior derecha
+                    anpi::mapeoMatrizVector(x.back()-1, y.back(), x.back(), M, N, arriba);
+                    if (I[permut[arriba]] > 0) {
+                        x.push_back(x.back());
+                        y.push_back(y.back()-1);
+                    } else {
+                        x.push_back(x.back()-1);
+                        y.push_back(y.back());
+                    }
+                } else { // Borde inferior
+                    anpi::mapeoMatrizVector(x.back(), y.back()-1, x.back(), M, N, izquierda);
+                    anpi::mapeoMatrizVector(x.back()-1, y.back(), x.back(), M, N, arriba);
+                    anpi::mapeoMatrizVector(x.back(), y.back(), x.back(), M, N, derecha);
+                    if (-I[permut[izquierda]] > -I[permut[arriba]] > I[permut[derecha]]) {
+                        x.push_back(x.back());
+                        y.push_back(y.back()-1);
+                    } else if (-I[permut[arriba]] > I[permut[derecha]]) {
+                        x.push_back(x.back()-1);
+                        y.push_back(y.back());
+                    } else {
+                        x.push_back(x.back());
+                        y.push_back(y.back()+1);
+                    }
+                }
+            } else if (y.back() == N - 1) { // Borde derecho
+                anpi::mapeoMatrizVector(x.back()-1, y.back(), x.back(), M, N, arriba);
+                anpi::mapeoMatrizVector(x.back(), y.back()-1, x.back(), M, N, izquierda);
+                anpi::mapeoMatrizVector(x.back(), y.back(), x.back()+1, M, N, abajo);
+                if (-I[permut[arriba]] > -I[permut[izquierda]] > I[permut[abajo]]) {
+                    x.push_back(x.back()-1);
+                    y.push_back(y.back());
+                } else if (-I[permut[izquierda]] > I[permut[abajo]]) {
+                    x.push_back(x.back());
+                    y.push_back(y.back()-1);
+                } else {
+                    x.push_back(x.back()+1);
+                    y.push_back(x.back());
+                }
+            } else { // Internos
+                anpi::mapeoMatrizVector(x.back()-1, y.back(), x.back(), M, N, arriba);
+                anpi::mapeoMatrizVector(x.back(), y.back(), x.back(), M, N, derecha);
+                anpi::mapeoMatrizVector(x.back(), y.back(), x.back()+1, M, N, abajo);
+                anpi::mapeoMatrizVector(x.back(), y.back()-1, x.back(), M, N, izquierda);
+                if(-I[permut[arriba]] > I[permut[derecha]] > I[permut[abajo]] > -I[permut[izquierda]]) {
+                    x.push_back(x.back()-1);
+                    y.push_back(y.back());
+                } else if (I[permut[derecha]] > I[permut[abajo]] > -I[permut[izquierda]]) {
+                    x.push_back(x.back());
+                    y.push_back(y.back()+1);
+                } else if (I[permut[abajo]] > -I[permut[izquierda]]) {
+                    x.push_back(x.back()+1);
+                    y.push_back(y.back());
+                } else {
+                    x.push_back(x.back());
+                    y.push_back(y.back()-1);
+                }
+            }
+        }
+    }
 }
-
-
 #endif //TAREA03_ROBOT_H
