@@ -403,9 +403,34 @@ namespace anpi {
     void estrategia2(const int& initialM, const int& initialN,
                      const int& finalM, const int& finalN,
                      const unsigned int& M, const unsigned int& N,
-                     const anpi::Matrix<float> dx, const anpi::Matrix<float> dy,
+                     const anpi::Matrix<float>& dx, const anpi::Matrix<float>& dy,
                      std::vector<T>& x, std::vector<T>& y) {
+        x = {initialM};
+        y = {initialN};
+        int x_0;
+        int y_0;
+        T x_i; //componente x de la interpolacion izquierda
+        T y_i; //componente y de la interpolacion izquierda
+        T x_d; //componente x de la interpolacion derecha
+        T y_d; //componente y de la interpolacion derecha
+        T x_c; //componente x de la interpolacion en y
+        T y_c; //componente y de la interpolacion en y
 
+        //puede dar problemas por los tipos de las variables
+        while (std::abs(x.back() - finalM) > 1 || std::abs(y.back() - finalN) > 1) {
+            x_0 = x.back();
+            y_0 = y.back();
+            if (x.back() - x_0 != 0 && y.back() - y_0 != 0) { //interpolar
+                x_i = dx[x_0][y_0] + x.back()-x_0;
+                y_i = dy[x_0][y_0] - dy[x_0+1][y_0];
+                x_d = dx[x_0][y_0+1] - dx[x_0+1][y_0+1];
+                y_d = dy[x_0][y_0+1] - dy[x_0+1][y_0+1];
+                
+
+            } else {
+
+            }
+        }
     }
 
 }
