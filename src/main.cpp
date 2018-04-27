@@ -135,6 +135,10 @@ int main() {
     printVector(i);
     std::cout << std::endl << "permut:   ";
     printVector(permut);
+    std::cout<< std::endl<<"x:  ";
+    printVector(x);
+    std::cout<< std::endl<<"y:  ";
+    printVector(y);
 
     std::cout<< std::endl << "ruta:    ";
     for (unsigned int j = 0; j < x.size(); ++j) {
@@ -152,7 +156,7 @@ int main() {
     p.setYLabel("Desplazamiento en Y");
     castVector(x,c);
     castVector(y,d);
-    p.plot(d,c,"Trayectoria","green");
+    p.plot(c,d,"Trayectoria","green");
     p.show();
 //---------------------------------------------------------------
 
