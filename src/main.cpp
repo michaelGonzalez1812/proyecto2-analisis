@@ -14,6 +14,7 @@
 #include <LUCrout.hpp>
 #include "LUDoolittle.hpp"
 #include "Robot.hpp"
+#include "PlotPy.hpp"
 
 /**
  * Herramienta para visualizar matrices
@@ -54,6 +55,25 @@ void castVector(const std::vector<unsigned int>& x, std::vector<int>& y) {
 }
 
 int main() {
+    /** Codigo de ejemplo de graficacion **/
+    std::vector<int> c;
+    std::vector<int> d;
+    std::vector<unsigned int> a;
+    std::vector<unsigned int> b;
+    std::vector<unsigned int> permut(3);
+    std::vector<float> i(7);
+
+    anpi::Plot2d <int> p;
+    p.initialize(001);
+    p.setTitle("Trayectoria del Robot");
+    p.setXLabel("Desplazamiento en X");
+    p.setYLabel("Desplazamiento en Y");
+    anpi::estrategia1(i,permut,0,0,1,1,2,3,a,b);
+    castVector(a,c);
+    castVector(b,d);
+    p.plot(c,d,"Trayectoria","green");
+    p.show();
+
 //***********************************************************
 //    Some example code
 //***********************************************************
