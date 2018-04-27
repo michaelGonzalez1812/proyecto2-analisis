@@ -111,7 +111,7 @@ int main() {
 //--------------------------------------------------------------
 
 //Montar ecuaciones---------------------------------------------
-    /**
+
     anpi::Matrix<float> M(7, 7);
     std::vector<float> i(7);
     std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
@@ -153,7 +153,7 @@ int main() {
     castVector(x,c);
     castVector(y,d);
     p.plot(d,c,"Trayectoria","green");
-    p.show(); **/
+    p.show();
 //---------------------------------------------------------------
 
 //    anpi::Matrix<float> M {{2, 6},
