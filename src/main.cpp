@@ -55,24 +55,7 @@ void castVector(const std::vector<unsigned int>& x, std::vector<int>& y) {
 }
 
 int main() {
-    /** Codigo de ejemplo de graficacion **/
-    std::vector<int> c;
-    std::vector<int> d;
-    std::vector<unsigned int> a;
-    std::vector<unsigned int> b;
-    std::vector<unsigned int> permut(3);
-    std::vector<float> i(7);
 
-    anpi::Plot2d <int> p;
-    p.initialize(001);
-    p.setTitle("Trayectoria del Robot");
-    p.setXLabel("Desplazamiento en X");
-    p.setYLabel("Desplazamiento en Y");
-    anpi::estrategia1(i,permut,0,0,1,1,2,3,a,b);
-    castVector(a,c);
-    castVector(b,d);
-    p.plot(c,d,"Trayectoria","green");
-    p.show();
 
 //***********************************************************
 //    Some example code
@@ -128,34 +111,49 @@ int main() {
 //--------------------------------------------------------------
 
 //Montar ecuaciones---------------------------------------------
-//    anpi::Matrix<float> M(7, 7);
-//    std::vector<float> i(7);
-//    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
-//    std::vector<unsigned int> permut(7);
-//    anpi::Matrix<float> LU;
-//    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
-//    std::vector<unsigned int> x;
-//    std::vector<unsigned int> y;
+    /**
+    anpi::Matrix<float> M(7, 7);
+    std::vector<float> i(7);
+    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
+    std::vector<unsigned int> permut(7);
+    anpi::Matrix<float> LU;
+    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
+    std::vector<unsigned int> x;
+    std::vector<unsigned int> y;
+
+    anpi::ecuacionesNodos(M, b, 2, 3);
+    anpi::ecuacionesMallas(M, r, 2, 3);
+
+    anpi::luDoolittle(M, LU, permut);
+
+    anpi::solveLU(LU, i, b, permut);
+
+    anpi::estrategia1(i, permut, 0, 0, 1, 1, 2, 3, x, y);
 //
-//    anpi::ecuacionesNodos(M, b, 2, 3);
-//    anpi::ecuacionesMallas(M, r, 2, 3);
-//
-//    anpi::luDoolittle(M, LU, permut);
-//
-//    anpi::solveLU(LU, i, b, permut);
-//
-//    anpi::estrategia1(i, permut, 0, 0, 1, 1, 2, 3, x, y);
-//
-//    printMatriz(M);
-//    std::cout << std::endl << "i:   ";
-//    printVector(i);
-//    std::cout << std::endl << "permut:   ";
-//    printVector(permut);
-//
-//    std::cout<< std::endl << "ruta:    ";
-//    for (unsigned int j = 0; j < x.size(); ++j) {
-//        std::cout << "(" << x[j] << ", " << y[j] << ") ";
-//    }
+    printMatriz(M);
+    std::cout << std::endl << "i:   ";
+    printVector(i);
+    std::cout << std::endl << "permut:   ";
+    printVector(permut);
+
+    std::cout<< std::endl << "ruta:    ";
+    for (unsigned int j = 0; j < x.size(); ++j) {
+        std::cout << "(" << x[j] << ", " << y[j] << ") ";
+    }
+
+    // Codigo de ejemplo de graficacion
+    std::vector<int> c;
+    std::vector<int> d;
+
+    anpi::Plot2d <int> p;
+    p.initialize(001);
+    p.setTitle("Trayectoria del Robot");
+    p.setXLabel("Desplazamiento en X");
+    p.setYLabel("Desplazamiento en Y");
+    castVector(x,c);
+    castVector(y,d);
+    p.plot(d,c,"Trayectoria","green");
+    p.show(); **/
 //---------------------------------------------------------------
 
 //    anpi::Matrix<float> M {{2, 6},
