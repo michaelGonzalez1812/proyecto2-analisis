@@ -86,6 +86,20 @@ Matrix.tpp
 bits/MatrixArithmetic.hpp
 ../include/bits/MatrixArithmetic.hpp
 
+../include/PlotPy.hpp
+python2.7/Python.h
+-
+stdlib.h
+-
+string
+-
+vector
+-
+PlotPy.tpp
+../include/PlotPy.tpp
+
+../include/PlotPy.tpp
+
 ../include/Robot.hpp
 LUDoolittle.hpp
 ../include/LUDoolittle.hpp
@@ -165,4 +179,6 @@ LUDoolittle.hpp
 /home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/LUDoolittle.hpp
 Robot.hpp
 /home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/Robot.hpp
+PlotPy.hpp
+/home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/PlotPy.hpp
 

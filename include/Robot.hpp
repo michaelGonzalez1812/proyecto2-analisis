@@ -425,7 +425,7 @@ namespace anpi {
                 y_i = dy[x_0][y_0] - dy[x_0+1][y_0];
                 x_d = dx[x_0][y_0+1] - dx[x_0+1][y_0+1];
                 y_d = dy[x_0][y_0+1] - dy[x_0+1][y_0+1];
-                
+
 
             } else {
 

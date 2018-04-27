@@ -166,10 +166,10 @@ int main() {
 //    M/=norma;
 //    printMatriz(M);
 
-    float n = 2.8;
-    int m = n;
-    float x = n-m;
-    std::cout << x;
+//    float n = 2.8;
+//    int m = n;
+//    float x = n-m;
+//    std::cout << x;
 
     return EXIT_FAILURE;
 }

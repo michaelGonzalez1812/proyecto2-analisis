@@ -22,6 +22,8 @@ src/CMakeFiles/anpi.dir/main.cpp.o: ../include/LUCrout.hpp
 src/CMakeFiles/anpi.dir/main.cpp.o: ../include/LUDoolittle.hpp
 src/CMakeFiles/anpi.dir/main.cpp.o: ../include/Matrix.hpp
 src/CMakeFiles/anpi.dir/main.cpp.o: ../include/Matrix.tpp
+src/CMakeFiles/anpi.dir/main.cpp.o: ../include/PlotPy.hpp
+src/CMakeFiles/anpi.dir/main.cpp.o: ../include/PlotPy.tpp
 src/CMakeFiles/anpi.dir/main.cpp.o: ../include/Robot.hpp
 src/CMakeFiles/anpi.dir/main.cpp.o: ../include/bits/MatrixArithmetic.hpp
 src/CMakeFiles/anpi.dir/main.cpp.o: ../src/main.cpp

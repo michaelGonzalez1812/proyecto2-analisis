@@ -11,6 +11,8 @@ src/CMakeFiles/tarea03.dir/main.cpp.o
  ../include/LUDoolittle.hpp
  ../include/Matrix.hpp
  ../include/Matrix.tpp
+ ../include/PlotPy.hpp
+ ../include/PlotPy.tpp
  ../include/Robot.hpp
  ../include/bits/MatrixArithmetic.hpp
  /home/mike/Documentos/analisis/Proyectos/proyecto 02/proyecto2-analisis/src/main.cpp

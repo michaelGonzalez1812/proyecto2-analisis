@@ -15,6 +15,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00bfc305-defc-4a27-9263-67380b9b8e8a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/include/Robot.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Robot.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
@@ -29,11 +30,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Robot.hpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Robot.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="109">
-              <caret line="427" column="16" selection-start-line="427" selection-start-column="16" selection-end-line="427" selection-end-column="16" />
+              <caret line="427" selection-start-line="427" selection-end-line="427" />
               <folding>
                 <element signature="e#19068#19080#0" expanded="true" />
               </folding>
@@ -50,14 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="127">
-              <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="150" selection-end-column="18" />
-              <folding>
-                <element signature="e#207#225#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="2052">
+              <caret line="168" selection-start-line="168" selection-start-column="2" selection-end-line="171" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -103,8 +101,8 @@
         <option value="$PROJECT_DIR$/include/LUDoolittle.hpp" />
         <option value="$PROJECT_DIR$/include/Matrix.tpp" />
         <option value="$PROJECT_DIR$/include/Matrix.hpp" />
-        <option value="$PROJECT_DIR$/src/main.cpp" />
         <option value="$PROJECT_DIR$/include/Robot.hpp" />
+        <option value="$PROJECT_DIR$/src/main.cpp" />
       </list>
     </option>
   </component>
@@ -207,7 +205,7 @@
       <workItem from="1524690219211" duration="1684000" />
       <workItem from="1524696890989" duration="15335000" />
       <workItem from="1524759083084" duration="5474000" />
-      <workItem from="1524770819075" duration="13858000" />
+      <workItem from="1524770819075" duration="14498000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1522798087001</created>
@@ -255,7 +253,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="155394000" />
+    <option name="totallyTimeSpent" value="156034000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -272,11 +270,11 @@
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24178404" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32917318" />
-      <window_info active="true" anchor="bottom" x="1431" y="24" width="1855" height="1056" id="Messages" order="7" visible="true" weight="0.40561622" />
+      <window_info anchor="bottom" x="1431" y="24" width="1855" height="1056" id="Messages" order="7" weight="0.40561622" />
       <window_info anchor="bottom" id="CMake" order="11" weight="0.32761312" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.32917318" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.48673946" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5319813" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32917318" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -363,9 +361,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="774">
           <caret line="43" column="23" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding>
-            <element signature="e#207#225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -405,9 +400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
           <caret line="35" column="5" lean-forward="true" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
-          <folding>
-            <element signature="e#207#225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -429,9 +421,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-          <folding>
-            <element signature="e#207#225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -464,9 +453,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="540">
           <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="e#207#225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -499,9 +485,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="522">
           <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
-          <folding>
-            <element signature="e#207#225#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -531,13 +514,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#207#225#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -699,23 +676,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.cpp">
+    <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="150" selection-end-column="18" />
+        <state relative-caret-position="109">
+          <caret line="427" selection-start-line="427" selection-end-line="427" />
           <folding>
-            <element signature="e#207#225#0" expanded="true" />
+            <element signature="e#19068#19080#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/include/Robot.hpp">
+    <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="427" column="16" selection-start-line="427" selection-start-column="16" selection-end-line="427" selection-end-column="16" />
-          <folding>
-            <element signature="e#19068#19080#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="2052">
+          <caret line="168" selection-start-line="168" selection-start-column="2" selection-end-line="171" selection-end-column="21" />
         </state>
       </provider>
     </entry>
