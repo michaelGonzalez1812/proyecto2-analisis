@@ -201,8 +201,8 @@ namespace anpi {
                      std::vector<unsigned int>& x,
                      std::vector<unsigned int>& y) {
 
-        x = {initialM};
-        y = {initialN};
+        x = {(unsigned int)initialM};
+        y = {(unsigned int)initialN};
         unsigned int arriba;
         unsigned int derecha;
         unsigned int abajo;
