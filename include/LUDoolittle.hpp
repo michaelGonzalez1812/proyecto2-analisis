@@ -12,6 +12,7 @@
 #include <limits>
 #include <functional>
 #include <algorithm>
+#include <vector>
 
 #include "Exception.hpp"
 #include "Matrix.hpp"

@@ -1,1 +1,1 @@
-#define ANPI_ENABLE_SIMD
+#define ANPI_ENABLE_SIMD1

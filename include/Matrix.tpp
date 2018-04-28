@@ -9,6 +9,47 @@
  */
 
 #include "bits/MatrixArithmetic.hpp"
+#include <iostream>
+#include "AnpiConfig.hpp"
+
+
+template<typename T, class Alloc>
+void fillSIMD(anpi::Matrix<T, Alloc> *, T);
+
+#if defined(__SSE2__) && defined(ANPI_ENABLE_SIMD)
+
+template<>
+void fillSIMD<double>(anpi::Matrix<double> *mat, double val) {
+    //std::cout << "With SSE2" << std::endl;
+    const __m128d value = _mm_set_pd(val, val);
+    double *fin = mat->data() + (mat->rows() * mat->dcols());
+    double *i = mat->data();
+    for (; i <= fin; i += 2) {
+        _mm_storer_pd(i, value);
+    }
+}
+
+template<>
+void fillSIMD<int>(anpi::Matrix<int> *mat, int val) {
+    const __m128i value = _mm_set1_epi32(val);
+    __m128i *fin = reinterpret_cast<__m128i *>(mat->data() + (mat->rows() * mat->dcols()));
+    __m128i *i = reinterpret_cast<__m128i *>(mat->data());
+    for (; i <= fin; i++) {
+        _mm_store_si128(i, value);
+    }
+}
+
+#else
+
+template<typename T, class Alloc>
+void fillSIMD(anpi::Matrix<T, Alloc> *mat, T val) {
+    std::cout << "Without SSE2" << std::endl;
+    for (T *ptr = mat->data(), *end = mat->data() + (mat->rows() * mat->dcols()); ptr != end; ++ptr) {
+        *ptr = val;
+    }
+}
+
+#endif
 
 namespace anpi {
 
@@ -316,10 +357,36 @@ namespace anpi {
 
     template<typename T, class Alloc>
     void Matrix<T, Alloc>::fill(const T val) {
+        fillSIMD<T>(this, val);
+        /**
+         * Primer intento
+        const __m128d value = _mm_set_pd(val,val);
+        for (double *i = _impl._data, *fin = this->_impl._data + (this->_impl._rows * this->_impl._dcols);
+             i < fin; i+=2) {
+            _mm_storeu_pd(i, value);
+        }
+
+         * Caso del profe
         T *end = this->_impl._data + (this->_impl._rows * this->_impl._dcols);
         for (T *ptr = this->_impl._data; ptr != end; ++ptr) {
             *ptr = val;
         }
+         * Caso cristian
+        for (__m128d *i = reinterpret_cast<__m128d *>( _impl._data), *fin =
+                reinterpret_cast<__m128d *>(this->_impl._data + (this->_impl._rows * this->_impl._dcols));
+             i != fin; i+=2) {
+            //std::cout<<"MEM[ "<<i<<" ]"<<std::endl;
+            *i = _mm_set_pd(val, val);
+        }
+         * Segundo Intento
+        const __m128d value = _mm_set_pd(val,val);
+        for (double *i = _impl._data, *fin = this->_impl._data + (this->_impl._rows * this->_impl._dcols);
+             i != fin; i +=2) {
+            _mm_storer_pd(i, value);
+        }
+
+
+        **/
 
         // ACCELERATE ME!
     }
@@ -493,3 +560,5 @@ T operator*(const std::vector<T, std::allocator<T>> &a,
 
     return resultado;
 }
+
+

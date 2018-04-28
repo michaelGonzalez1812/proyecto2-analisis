@@ -9,6 +9,7 @@
  */
 
 #include <exception>
+#include <string>
 
 #ifndef ANPI_EXCEPTION_HPP
 #define ANPI_EXCEPTION_HPP

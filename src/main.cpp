@@ -14,7 +14,17 @@
 #include <LUCrout.hpp>
 #include "LUDoolittle.hpp"
 #include "Robot.hpp"
-#include "PlotPy.hpp"
+#include <ctime>
+#include <sys/time.h>
+
+typedef unsigned long long timestamp_t;
+
+static timestamp_t
+get_timestamp() {
+    struct timeval now;
+    gettimeofday(&now, NULL);
+    return now.tv_usec + (timestamp_t) now.tv_sec * 1000000;
+}
 
 /**
  * Herramienta para visualizar matrices
@@ -40,116 +50,161 @@ void printMatriz(anpi::Matrix<T> &A) {
  */
 template<typename T>
 void printVector(std::vector<T> &A) {
-    int unsigned i;
     std::cout << "{";
-    for (i = 0; i < A.size(); i++) {
-        if (i == A.size() - 1) std::cout << "i[" << i << "]: " << A[i];
-        else std::cout << "i[" << i << "]: " << A[i] << ", ";
-        if (i == 19) std::cout << std::endl;
+    for (int unsigned i = 0; i < A.size(); i++) {
+        if (i == A.size() - 1) std::cout << A[i];
+        else std::cout << A[i] << ", ";
     }
-    std::cout << "}" << std::endl << i << std::endl;
-}
-
-/**
- * Castea un vector de tipo unsigned int a uno de int
- * @param x
- * @param y
- */
-void castVector(const std::vector<unsigned int> &x, std::vector<int> &y) {
-    for (unsigned int i = 0; i < x.size(); ++i) {
-        y.push_back(x[i]);
-    }
-}
-
-/**
- * Multiplica en -1 a cada elemento de un vector
- */
-template<typename T>
-void negarVector(std::vector<T> &x) {
-    std::vector<T> y(x.size());
-    for (unsigned int i = 0; i < x.size(); i++) {
-        y[i] = -x[i];
-    }
-    x = y;
+    std::cout << "}" << std::endl;
 }
 
 int main() {
-    anpi::Matrix<float> M(38, 38); //Matriz para los coeficientes de las ecuacines
-    std::vector<float> i(38); //vector de corrientes
-    std::vector<float> b(38); //parte derecha de las ecuaciones
-    const unsigned int minicial = 0;
-    const unsigned int ninicial = 1;
-    const unsigned int mfinal = 3;
-    const unsigned int nfinal = 4;
-    const unsigned int filasMatrizNodos = 4; //Tamaño de la matriz de nodos
-    const unsigned int columnasMatrizNodos = 6; //Tamaño de la matriz de nodos
+//***********************************************************
+//    Some example code
+//***********************************************************
 
-//Descomentar para trabajar con estrategia 1--------------------------------------------
-    std::vector<unsigned int> x;
-    std::vector<unsigned int> y;
-//--------------------------------------------------------------------------------------
+//LUDoolittle con pivoteo------------------------------------
+//    anpi::Matrix<float> A = {{1,  2, -1},
+//                             {3,  1,  1},
+//                             {1, -1,  2}};
+//    anpi::Matrix<float> LU;
+//    std::vector<unsigned int> permut(3);
+//    std::vector<float> x(3);
+//    std::vector<float> b{-3, 4, 6};
+//
+//    anpi::luDoolittle(A, LU, permut);
+//
+//    std::cout << std::endl;
+//    printMatriz(LU);
+//
+//    anpi::solveLU(LU, x, b, permut);
+//
+//    std::cout << "orden:   " << std::endl;
+//    printVector(permut);
+//    std::cout << std::endl << "resultado" << std::endl;
+//    printVector(x);
+//-----------------------------------------------------------
 
-//Descomentar para trabajar con estrategia 2--------------------------------------------
-//    const float alpha = 1; //tamaño del paso
-//    std::vector<float> x;
-//    std::vector<float> y;
-//    anpi::Matrix<float> dx(4, 6);
-//    anpi::Matrix<float> dy(4, 6);
-//--------------------------------------------------------------------------------------
+//mapeo matriz vector----------------------------------------
+//    const unsigned int m1 = 1;
+//    const unsigned int n1 = 0;
+//    const unsigned int m2 = 1;
+//    const unsigned int M = 5;
+//    const unsigned int N = 4;
+//    unsigned int x = 0;
+//    anpi::mapeoMatrizVector(m1, n1, m2, M, N, x);
+//
+//    std::cout << x;
+//------------------------------------------------------------
 
 
+//mapeo vector matriz-----------------------------------------
+//    unsigned int m1 = 0;
+//    unsigned int n1 = 0;
+//    unsigned int m2 = 0;
+//    unsigned int n2 = 0;
+//    const unsigned int M = 4;
+//    const unsigned int N = 3;
+//    unsigned int x = 7;
+//    anpi::mapeoVectorMatriz(m1, n1, m2, n2, M, N, x);
+//
+//    std::cout << "m1= " << m1 << "   n1: " <<  n1 << std::endl;
+//    std::cout << "m2= " << m2 << "   n2: " <<  n2 << std::endl;
+//--------------------------------------------------------------
 
-    std::vector<unsigned int> permut(38);
+//Montar ecuaciones---------------------------------------------
+    /**
+    anpi::Matrix<float> M(7, 7);
+    std::vector<float> x(7);
+    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
+    std::vector<unsigned int> permut(7);
     anpi::Matrix<float> LU;
-    std::vector<float> r { 1000, 1000, 1000, 1000, 1000,
-                           1000, 1000, 1000, 1000, 1000,
-                           1000, 1, 1, 1, 1000,
-                           1000, 1000, 1000, 1000, 1000,
-                           1000, 1000, 1000,
-                           1, 1, 1000,
-                           1000, 1000, 1000,
-                           1000, 1000, 1000,
-                           1000, 1000, 1,
-                           1000, 1000, 1000};
+    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
 
-    anpi::ecuacionesNodos(M, b, 4, 6, 0, 1, 3, 4);
-    anpi::ecuacionesMallas(M, r, 4, 6);
+    anpi::ecuacionesNodos(M, b, 2, 3);
+    anpi::ecuacionesMallas(M, r, 2, 3);
+    **/
+    std::cout << "Todo ok 1" << std::endl;
+    anpi::Matrix<int> mFill(8, 8);
+    std::cout << "Todo ok 2" << std::endl;
+    std::cout << "elemento 9,9: " << mFill[9][9] << std::endl;
+    const int v = 3;
+    timestamp_t t0 = get_timestamp();
+    mFill.fill(v);
+    timestamp_t t1 = get_timestamp();
+    double secs = (t1 - t0) / 1000000.0L;
+    std::cout << "Todo ok 3" << std::endl;
+    std::cout << "Tiempo tomado: " << secs << std::endl;
+    std::cout << "elemento " << mFill.rows() - 1 << "," << mFill.cols() - 1 << ": "
+              << mFill[mFill.rows() - 1][mFill.cols() - 1] << std::endl;
 
-    anpi::luDoolittle(M, LU, permut);
-    anpi::solveLU(LU, i, b, permut);
+    std::cout<<"Matriz de resultado:"<<std::endl;\
 
-//Descomentar para trabajar con estrategia 1--------------------------------------------
-    anpi::estrategia1(i, minicial, ninicial, mfinal, nfinal, filasMatrizNodos, columnasMatrizNodos, x, y);
-//--------------------------------------------------------------------------------------
-
-//Descomentar para trabajar con estrategia 2--------------------------------------------
-//    anpi::desplazamientos(i, dx, dy, 4, 6);
-//    anpi::estrategia2(minicial, ninicial, mfinal, nfinal, filasMatrizNodos, columnasMatrizNodos, dx, dy, alpha, x, y);
-//--------------------------------------------------------------------------------------
-
-    std::cout<< std::endl << "ruta:    ";
-    for (unsigned int j = 0; j < x.size(); ++j) {
-        std::cout << "(" << x[j] << ", " << y[j] << ") ";
+    for(unsigned int i=0;i<mFill.rows();i++){
+        for(unsigned int j=0;j<mFill.cols();j++){
+            std::cout<<mFill[i][j]<<", ";
+        }
+        std::cout<<std::endl;
     }
 
-    // Codigo de ejemplo de graficacion
-    std::vector<int> xPlot;
-    std::vector<int> yPlot;
+    /**
+    anpi::luDoolittle(M, LU, permut);
 
-    anpi::Plot2d<int> p;
-    p.initialize(001);
-    p.setTitle("Trayectoria del Robot");
-    p.setXLabel("Desplazamiento en X");
-    p.setYLabel("Desplazamiento en Y");
-    castVector(x, yPlot);
-    castVector(y, xPlot);
-    negarVector(yPlot);
-    std::cout << std::endl << "xPlot:  ";
-    printVector(xPlot);
-    std::cout << std::endl << "yPlot:  ";
-    printVector(yPlot);
-    p.plot(xPlot, yPlot, "Trayectoria", "green");
-    p.show();
+    anpi::solveLU(LU, x, b, permut);
 
+    printMatriz(M);
+    std::cout << std::endl << "x:   ";
+    printVector(x);
+    **/
+//---------------------------------------------------------------
     return 0;
 }
+
+//    anpi::Matrix<float> A = {{-1, -2, 1, 2},
+//                             {2,  0,  1, 2},
+//                             {-1, -1, 0, 1},
+//                             {1,  1,  1, 1}};
+//    std::cout << "------------TEST LU------------" << std::endl;
+//    std::cout << "-Matriz A original-" << std::endl;
+//    printMatriz(A);
+//    anpi::Matrix<float> LU;
+//    std::vector<size_t> p;
+//    std::cout << "- LU Dolittle de A -" << std::endl;
+//    anpi::luDoolittle(A, LU, p);
+//    printMatriz(LU);
+//    std::cout << "- Unpack Dolittle de LU -" << std::endl;
+//    anpi::Matrix<float> L, U, LUA;
+//    anpi::unpackDoolittle(LU, L, U);
+//    std::cout << "L->" << std::endl;
+//    printMatriz(L);
+//    std::cout << "U->" << std::endl;
+//    printMatriz(U);
+//    std::cout << "- Comprobacion de A=L*U -" << std::endl;
+//    LUA = L * U;
+//    printMatriz(LUA);
+//    std::cout << "-----------------------------" << std::endl;
+//    std::cout << "- LU Crout de A -" << std::endl;
+//    anpi::luCrout(A, LU, p);
+//    printMatriz(LU);
+//    std::cout << "- Unpack Crout de LU -" << std::endl;
+//    anpi::unpackCrout(LU, L, U);
+//    std::cout << "L->" << std::endl;
+//    printMatriz(L);
+//    std::cout << "U->" << std::endl;
+//    printMatriz(U);
+//    std::cout << "- Comprobacion de A=L*U -" << std::endl;
+//    LUA = L * U;
+//    printMatriz(LUA);
+//    std::cout << "-------TEST Producto Matricial--------" << std::endl;
+//    std::cout << "-Matriz A -" << std::endl;
+//    printMatriz(A);
+//    std::cout << "Vector O -" << std::endl;
+//    std::vector<float> O = {1, 2, 3, 4};
+//    printVector(O);
+//    std::cout << "-A*O -" << std::endl;
+//    std::vector<float> R = A * O;
+//    printVector(R);
+//    std::cout << "-----------------------------" << std::endl;
+//    std::cout << "A*A" << std::endl;
+//    LUA=A*A;
+//    printMatriz(LUA);
