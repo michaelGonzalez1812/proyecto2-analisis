@@ -52,7 +52,7 @@
         unsigned int N = Nn - 1;
         unsigned int inicioCol = M * N + N;
 
-        if (x < inicioCol){
+        if (x < inicioCol) {
             n1 = x % N;
             n2 = n1 + 1;
             m1 = (x - n1) / N;
