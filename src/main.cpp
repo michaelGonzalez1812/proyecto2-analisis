@@ -48,14 +48,30 @@ void printVector(std::vector<T> &A) {
     std::cout << "}" << std::endl;
 }
 
-void castVector(const std::vector<unsigned int>& x, std::vector<int>& y) {
+/**
+ * Castea un vector de tipo unsigned int a uno de int
+ * @param x
+ * @param y
+ */
+void castVector(const std::vector<unsigned int> &x, std::vector<int> &y) {
     for (unsigned int i = 0; i < x.size(); ++i) {
         y.push_back(x[i]);
     }
 }
 
-int main() {
+/**
+ * Multiplica en -1 a cada elemento de un vector
+ */
+template<typename T>
+void negarVector(std::vector<T> &x) {
+    std::vector<T> y(x.size());
+    for (unsigned int i = 0; i < x.size(); i++) {
+        y[i] = -x[i];
+    }
+    x = y;
+}
 
+int main() {
 
 //***********************************************************
 //    Some example code
@@ -114,10 +130,10 @@ int main() {
 
     anpi::Matrix<float> M(7, 7);
     std::vector<float> i(7);
-    std::vector<float> b {-1, 0, 0, 1, 0, 0, 0};
+    std::vector<float> b{-1, 0, 0, 1, 0, 0, 0};
     std::vector<unsigned int> permut(7);
     anpi::Matrix<float> LU;
-    std::vector<float> r {10, 10, 100, 10, 100, 100, 10};
+    std::vector<float> r{10, 10, 100, 10, 100, 100, 10};
     std::vector<unsigned int> x;
     std::vector<unsigned int> y;
 
@@ -129,35 +145,52 @@ int main() {
     anpi::solveLU(LU, i, b, permut);
 
     anpi::estrategia1(i, permut, 0, 0, 1, 1, 2, 3, x, y);
-//
+
     printMatriz(M);
     std::cout << std::endl << "i:   ";
     printVector(i);
     std::cout << std::endl << "permut:   ";
     printVector(permut);
-    std::cout<< std::endl<<"x:  ";
+    std::cout << std::endl << "x:  ";
     printVector(x);
-    std::cout<< std::endl<<"y:  ";
+    std::cout << std::endl << "y:  ";
     printVector(y);
 
-    std::cout<< std::endl << "ruta:    ";
+    std::cout << std::endl << "ruta:    ";
     for (unsigned int j = 0; j < x.size(); ++j) {
         std::cout << "(" << x[j] << ", " << y[j] << ") ";
     }
 
     // Codigo de ejemplo de graficacion
-    std::vector<int> c;
-    std::vector<int> d;
+    std::vector<int> xPlot;
+    std::vector<int> yPlot;
 
-    anpi::Plot2d <int> p;
+    anpi::Plot2d<int> p;
     p.initialize(001);
     p.setTitle("Trayectoria del Robot");
     p.setXLabel("Desplazamiento en X");
     p.setYLabel("Desplazamiento en Y");
-    castVector(x,c);
-    castVector(y,d);
-    p.plot(c,d,"Trayectoria","green");
+    castVector(x, yPlot);
+    castVector(y, xPlot);
+    //girarVector(yPlot);
+    //girarVector(xPlot);
+    negarVector(yPlot);
+    //negarVector(xPlot);
+    std::cout << std::endl << "xPlot:  ";
+    printVector(xPlot);
+    std::cout << std::endl << "yPlot:  ";
+    printVector(yPlot);
+    p.plot(xPlot, yPlot, "Trayectoria", "green");
     p.show();
+
+    //Prueba girar vector
+    /**std::vector<int> f {1,2,3,4};
+    std::cout<< std::endl<<"f:  ";
+    printVector(f);
+    girarVector(f);
+    std::cout<< std::endl<<"Nuevo f:  ";
+    printVector(f);**/
+
 //---------------------------------------------------------------
 
 //    anpi::Matrix<float> M {{2, 6},
@@ -173,7 +206,7 @@ int main() {
 //    float x = n-m;
 //    std::cout << x;
 
-    return EXIT_FAILURE;
+    return 0;
 }
 
 //    anpi::Matrix<float> A = {{-1, -2, 1, 2},
