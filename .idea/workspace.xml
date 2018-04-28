@@ -15,14 +15,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="00bfc305-defc-4a27-9263-67380b9b8e8a" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/__/include/Robot.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/anpi.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/tarea03.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/CMakeFiles/tarea03.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/libanpi.a" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/tarea03" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/tarea03" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Robot.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Robot.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/include/Robot.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/include/Robot.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.cpp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
@@ -58,8 +50,8 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-325">
-              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+            <state relative-caret-position="607">
+              <caret line="119" column="1" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -119,7 +111,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-169" />
     <option name="y" value="-4" />
     <option name="width" value="1299" />
@@ -212,7 +204,7 @@
       <workItem from="1524696890989" duration="15335000" />
       <workItem from="1524759083084" duration="5474000" />
       <workItem from="1524770819075" duration="27758000" />
-      <workItem from="1524857672964" duration="17896000" />
+      <workItem from="1524857672964" duration="18209000" />
     </task>
     <task id="LOCAL-00001" summary="Test">
       <created>1522798087001</created>
@@ -260,7 +252,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="187190000" />
+    <option name="totallyTimeSpent" value="187503000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -313,17 +305,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url />
+          <url>file://$PROJECT_DIR$/include/Robot.hpp</url>
           <line>203</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url />
+          <url>file://$PROJECT_DIR$/include/Robot.hpp</url>
           <line>413</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url />
+          <url>file://$PROJECT_DIR$/include/Robot.hpp</url>
           <line>422</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
@@ -362,7 +354,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>-I[arriba] &gt; I[derecha]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -372,7 +364,7 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string />
+        <expression-string>-I[arriba] &gt; I[derecha] &gt; I[abajo] &gt; -I[izquierda]</expression-string>
         <language-id>ObjectiveC</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -744,8 +736,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
-          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="607">
+          <caret line="119" column="1" selection-start-line="119" selection-start-column="1" selection-end-line="119" selection-end-column="1" />
         </state>
       </provider>
     </entry>

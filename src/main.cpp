@@ -116,5 +116,19 @@ int main() {
         std::cout << "(" << x[j] << ", " << y[j] << ") ";
     }
 
+    // Codigo de ejemplo de graficacion
+    std::vector<int> c;
+    std::vector<int> d;
+
+    anpi::Plot2d <int> p;
+    p.initialize(001);
+    p.setTitle("Trayectoria del Robot");
+    p.setXLabel("Desplazamiento en X");
+    p.setYLabel("Desplazamiento en Y");
+    castVector(x,c);
+    castVector(y,d);
+    p.plot(c,d,"Trayectoria","green");
+    p.show();
+
     return EXIT_FAILURE;
 }
